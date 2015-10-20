@@ -855,7 +855,7 @@ namespace TileEditor
             float w = tileWidth;
             float h = tileWidth / ratio;
             Rect rect = GUILayoutUtility.GetRect(Screen.width - 40, 300);
-            GUI.skin.scrollView = skin.scrollView;
+            //GUI.skin.scrollView = skin.scrollView;
             tileScrollPosition = GUI.BeginScrollView(rect, tileScrollPosition, new Rect(0, 0, rect.width - 20, gap + rowCount * (h + gap)));
             GUI.skin.scrollView = null;
 
