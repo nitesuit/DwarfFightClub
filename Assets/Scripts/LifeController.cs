@@ -30,22 +30,23 @@ public class LifeController : MonoBehaviour {
     {
         if(!immune && (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Hazard"))
         {
+
             lives--;
             immune = true;
             Immobile = true;
-            StartCoroutine(StayImmune(other));
+            StartCoroutine(TakeDamage(other));
             
         }
     }
 
-    IEnumerator StayImmune(Collision2D other)
+    IEnumerator TakeDamage(Collision2D other)
     {
-        for (float f = 5f; f >= 0; f -= 1f)
+        Vector3 throwback = (other.transform.position - transform.position) * -throwbackPower;
+        for (float f = 3f; f >= 0; f -= 1f)
         {
+            rb.velocity = throwback;
             //Vector3 tmp = other.transform.position - transform.position;
             //Vector3 throwback = new Vector3(Mathf.Sign(tmp.x), Mathf.Sign(tmp.y), Mathf.Sign(tmp.z)) * -throwbackPower;
-            Vector3 throwback = (other.transform.position - transform.position) * -throwbackPower;
-            rb.AddForce(throwback);
             if (f % 2 == 0) spriteRenderer.material.color = Color.red;
             else spriteRenderer.material.color = originalColor;
             Color c = spriteRenderer.material.color;
