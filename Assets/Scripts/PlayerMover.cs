@@ -18,10 +18,11 @@ public class PlayerMover : MonoBehaviour {
     private Rigidbody2D rb;
     private float accelerationPercent = 0.2f;
     private LifeController lifeC;
-
+    private Animator anim;
 
     // Use this for initialization
     void Start () {
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         lifeC = GetComponent<LifeController>();
 	}
@@ -35,8 +36,10 @@ public class PlayerMover : MonoBehaviour {
     {
         Debug.Log("Immobile: " + lifeC.Immobile);
         if(!lifeC.Immobile){
+
             float moveHorizontal = Input.GetAxis(controls.horizontal);
             float moveVertical = Input.GetAxis(controls.vertical);
+
             //Debug.Log("inputXY: (" + moveVertical + ", " + moveHorizontal + ")");
             if (accelerationPercent < 1)
             {
@@ -54,6 +57,43 @@ public class PlayerMover : MonoBehaviour {
             //Debug.Log("Acceleration percent: (" + accelerationPercent + ")");
             Vector3 movement = new Vector3(moveHorizontal * accelerationPercent, moveVertical * accelerationPercent, 0.0f);
             rb.velocity = movement * speed;
+
+            if (moveHorizontal != 0 || moveVertical != 0)
+            {
+                anim.SetBool("walking", true);
+
+
+                if (moveHorizontal > 0)
+                {
+                    anim.SetFloat("moveHorizontal", 1f);
+                }
+                else if (moveHorizontal < 0)
+                {
+                    anim.SetFloat("moveHorizontal", -1f);
+                }
+                else
+                {
+                    anim.SetFloat("moveHorizontal", 0f);
+                }
+
+                if (moveVertical > 0)
+                {
+                    anim.SetFloat("moveVertical", 1f);
+                }
+                else if (moveVertical < 0)
+                {
+                    anim.SetFloat("moveVertical", -1f);
+                }
+                else
+                {
+                    anim.SetFloat("moveVertical", 0f);
+                }
+
+            }
+            else
+            {
+                anim.SetBool("walking", false);
+            }
         }
     }
 }
