@@ -29,8 +29,8 @@ public class PlayerMover : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
+
+    }
 
     void FixedUpdate()
     {
@@ -94,6 +94,8 @@ public class PlayerMover : MonoBehaviour {
             {
                 anim.SetBool("walking", false);
             }
+            anim.SetFloat("moveHorizontal", moveHorizontal);
+            anim.SetFloat("moveVertical", moveVertical);
         }
     }
 }
