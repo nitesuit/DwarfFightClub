@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 75775daebc28b4458ab25d91b9c1bc1c
-timeCreated: 1445346423
-licenseType: Pro
+timeCreated: 1445431817
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: 32x32_map_tile v3.1 [MARGINLESS]_0
@@ -710,7 +710,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 32
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []

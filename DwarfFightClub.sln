@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DwarfFightClub.CSharp", "DwarfFightClub.CSharp.csproj", "{53650EFE-5D66-C8A2-2CB5-8C840FC0F067}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DwarfFightClub.CSharp.Editor", "DwarfFightClub.CSharp.Editor.csproj", "{9DA7C598-75E6-A652-0146-99EB8F3D681D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53650EFE-5D66-C8A2-2CB5-8C840FC0F067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53650EFE-5D66-C8A2-2CB5-8C840FC0F067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53650EFE-5D66-C8A2-2CB5-8C840FC0F067}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53650EFE-5D66-C8A2-2CB5-8C840FC0F067}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DA7C598-75E6-A652-0146-99EB8F3D681D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DA7C598-75E6-A652-0146-99EB8F3D681D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DA7C598-75E6-A652-0146-99EB8F3D681D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DA7C598-75E6-A652-0146-99EB8F3D681D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
