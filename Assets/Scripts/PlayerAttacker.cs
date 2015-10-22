@@ -29,15 +29,16 @@ public class PlayerAttacker : MonoBehaviour {
     public float weaponSpeed;
     public float nextFire;
     public float fireRate;
-    public Directions launchPoints; 
-
+    public Directions launchPoints;
+    private LifeController life;
     // Use this for initialization
     void Start () {
+        life = GetComponent<LifeController>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (Time.time > nextFire) {
+        if (Time.time > nextFire && life.lives>0) {
             if (Input.GetButton(controls.throwButton) && (weapon != null && ammo>0))
             {
                 nextFire = Time.time + fireRate;
@@ -62,7 +63,7 @@ public class PlayerAttacker : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(weapon == null && (other.tag =="Axe"))
+        if(weapon == null && (other.tag =="Weapon"))
         {
             weapon = other.gameObject;
             ammo += 1;
