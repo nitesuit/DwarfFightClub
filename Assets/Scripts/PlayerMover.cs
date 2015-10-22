@@ -2,15 +2,14 @@
 using System.Collections;
 
 [System.Serializable]
-public class Controls
+public class MovementControls
 {
-    public string attackButton;
     public string vertical;
     public string horizontal;
 }
 public class PlayerMover : MonoBehaviour {
 
-    public Controls controls;
+    public MovementControls controls;
     public float speed = 2.5f;
     public float acceleration = 0.1f;
     public float beginAccelerationPercent = 0.1f;
@@ -34,7 +33,7 @@ public class PlayerMover : MonoBehaviour {
 
     void FixedUpdate()
     {
-        Debug.Log("Immobile: " + lifeC.Immobile);
+        //Debug.Log("Immobile: " + lifeC.Immobile);
         if(!lifeC.Immobile){
 
             float moveHorizontal = Input.GetAxis(controls.horizontal);

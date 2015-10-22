@@ -34,12 +34,25 @@ public class LifeController : MonoBehaviour {
             lives--;
             immune = true;
             Immobile = true;
-            StartCoroutine(TakeDamage(other));
+            StartCoroutine(TakeDamage(other.collider));
             
         }
     }
 
-    IEnumerator TakeDamage(Collision2D other)
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!immune && (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Hazard"))
+        {
+
+            lives--;
+            immune = true;
+            Immobile = true;
+            StartCoroutine(TakeDamage(other));
+
+        }
+    }
+
+    IEnumerator TakeDamage(Collider2D other)
     {
         Vector3 throwback = (other.transform.position - transform.position) * -throwbackPower;
         for (float f = 3f; f >= 0; f -= 1f)

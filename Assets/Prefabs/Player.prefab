@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &124786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 401394}
+  m_Layer: 8
+  m_Name: WeaponSpawnRight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &128038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 407414}
+  m_Layer: 8
+  m_Name: WeaponSpawnDown
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &137242
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,9 +42,10 @@ GameObject:
   - 50: {fileID: 5043368}
   - 58: {fileID: 5892348}
   - 58: {fileID: 5885910}
+  - 95: {fileID: 9536360}
   - 114: {fileID: 11420644}
   - 114: {fileID: 11425436}
-  - 95: {fileID: 9536360}
+  - 114: {fileID: 11428680}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -22,6 +53,72 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &151406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 420060}
+  m_Layer: 8
+  m_Name: WeaponSpawnUp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &154666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 494908}
+  m_Layer: 8
+  m_Name: WeaponSpawnLeft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &401394
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124786}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .300000012, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 434500}
+  m_RootOrder: 1
+--- !u!4 &407414
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128038}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: -.300000012, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 434500}
+  m_RootOrder: 2
+--- !u!4 &420060
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 151406}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: .300000012, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 434500}
+  m_RootOrder: 0
 --- !u!4 &434500
 Transform:
   m_ObjectHideFlags: 1
@@ -29,11 +126,27 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 137242}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .850000024, y: 2.4000001, z: -1}
+  m_LocalPosition: {x: .652999997, y: 1.39499998, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 420060}
+  - {fileID: 401394}
+  - {fileID: 407414}
+  - {fileID: 494908}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!4 &494908
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154666}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.300000012, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 434500}
+  m_RootOrder: 3
 --- !u!50 &5043368
 Rigidbody2D:
   serializedVersion: 2
@@ -105,7 +218,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controls:
-    attackButton: Fire1
     vertical: Vertical
     horizontal: Horizontal
   speed: 2
@@ -122,8 +234,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38de69810d6daac4da79dce9c0571a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 1
-  throwbackPower: 300
+  lives: 10
+  throwbackPower: 3
+--- !u!114 &11428680
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 413d8de3345c3364b87aedcb511d02e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controls:
+    punchButton: Fire1
+    throwButton: Fire1
+    throwHorizontalInput: Horizontal
+    throwVerticalInput: Vertical
+    canPunchWhileHolding: 0
+    canHaveMoreThanOneAmmo: 0
+  ammo: 9
+  weapon: {fileID: 117266, guid: eac0c814882e8624084b86deb90b8608, type: 2}
+  punch: {fileID: 0}
+  weaponSpeed: 15
+  nextFire: 0
+  fireRate: 1
+  launchPoints:
+    up: {fileID: 420060}
+    right: {fileID: 401394}
+    down: {fileID: 407414}
+    left: {fileID: 494908}
 --- !u!212 &21221788
 SpriteRenderer:
   m_ObjectHideFlags: 1

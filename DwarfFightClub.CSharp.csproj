@@ -68,7 +68,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AxeScript.cs" />
     <Compile Include="Assets\Scripts\LifeController.cs" />
+    <Compile Include="Assets\Scripts\PlayerAttacker.cs" />
     <Compile Include="Assets\Scripts\PlayerMover.cs" />
     <Compile Include="Assets\Tools\Tile Editor\Scripts\Class\ColliderInfo.cs" />
     <Compile Include="Assets\Tools\Tile Editor\Scripts\Class\CollisionType.cs" />
