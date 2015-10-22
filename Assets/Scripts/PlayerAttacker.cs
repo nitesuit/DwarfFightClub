@@ -45,7 +45,9 @@ public class PlayerAttacker : MonoBehaviour {
 
                 Vector3 weaponSpawn = DetermineLaunchPoint().position;
                 GameObject o = Instantiate(weapon, weaponSpawn, Quaternion.identity) as GameObject;
-                o.GetComponent<Rigidbody2D>().velocity = (weaponSpawn-transform.position) * weaponSpeed;
+                Vector3 direction = weaponSpawn - transform.position;
+                o.GetComponent<Rigidbody2D>().velocity = (weaponSpawn - transform.position) * weaponSpeed;
+                if (direction.x > 0 || direction.y < 0) Flip(o);
                 o.tag = tag;
                 ammo--;
                 if (ammo == 0) weapon = null;
@@ -55,7 +57,7 @@ public class PlayerAttacker : MonoBehaviour {
                 nextFire = Time.time + fireRate;
 
                 Vector3 weaponSpawn = DetermineLaunchPoint().position;
-                GameObject o = Instantiate(punch, weaponSpawn, Quaternion.identity) as GameObject;
+                Instantiate(punch, weaponSpawn, Quaternion.identity);
             }
 
         }
@@ -63,16 +65,19 @@ public class PlayerAttacker : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(weapon == null && (other.tag =="Weapon"))
+        if (weapon == null && other.gameObject.layer == LayerMask.NameToLayer("Weapon") && other.tag != "Hazzard" && other.tag != "Player")
         {
-            weapon = other.gameObject;
+            Debug.Log("Entered collision with:" + other.tag);
+            Debug.Log("Entered collision with:" + other.gameObject.layer);
+
+            weapon = Resources.Load(other.tag) as GameObject;
             ammo += 1;
-            Destroy(other);
+            Destroy(other.gameObject);
         }
-        else if(controls.canHaveMoreThanOneAmmo && weapon.tag == other.tag)
+        else if(weapon != null && controls.canHaveMoreThanOneAmmo && weapon.tag == other.tag)
         {
             ammo += 1;
-            Destroy(other);
+            Destroy(other.gameObject);
         }
     }
 
@@ -88,4 +93,10 @@ public class PlayerAttacker : MonoBehaviour {
         return launchPoints.down;
     }
 
+    private void Flip(GameObject obj)
+    {
+        Vector3 theScale = obj.transform.localScale;
+        theScale.x *= -1;
+        obj.transform.localScale = theScale;
+    }
 }

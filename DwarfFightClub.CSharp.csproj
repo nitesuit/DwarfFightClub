@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\LifeController.cs" />
     <Compile Include="Assets\Scripts\PlayerAttacker.cs" />
     <Compile Include="Assets\Scripts\PlayerMover.cs" />
+    <Compile Include="Assets\Scripts\Rotator.cs" />
     <Compile Include="Assets\Tools\Tile Editor\Scripts\Class\ColliderInfo.cs" />
     <Compile Include="Assets\Tools\Tile Editor\Scripts\Class\CollisionType.cs" />
     <Compile Include="Assets\Tools\Tile Editor\Scripts\Class\Tile.cs" />
