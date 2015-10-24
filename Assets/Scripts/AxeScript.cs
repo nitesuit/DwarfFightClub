@@ -15,7 +15,7 @@ public class AxeScript : MonoBehaviour {
 
     void OnTriggerExit2D(Collider2D other)
     {
-        tag = "Hazard";
+       // tag = "Hazard";
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -23,6 +23,7 @@ public class AxeScript : MonoBehaviour {
         if (other.gameObject.tag != "Player")
         {
             tag = "Battle_axe";
+            transform.SetParent(null);
             rb.velocity = Vector3.zero;
         }
     }

@@ -48,7 +48,7 @@ GameObject:
   - 114: {fileID: 11428680}
   m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,7 +126,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 137242}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 2.1400001, y: 1.71000004, z: -1}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 420060}
@@ -218,9 +218,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controls:
-    vertical: Vertical
-    horizontal: Horizontal
-  speed: 2
+    vertical: P1_Vertical
+    horizontal: P1_Horizontal
+  speed: 2.5
   acceleration: 1
   beginAccelerationPercent: .100000001
 --- !u!114 &11425436
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38de69810d6daac4da79dce9c0571a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 10
+  lives: 1
   throwbackPower: 3
 --- !u!114 &11428680
 MonoBehaviour:
@@ -248,16 +248,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controls:
-    punchButton: Fire1
-    throwButton: Fire1
-    throwHorizontalInput: Horizontal
-    throwVerticalInput: Vertical
+    punchButton: P1_Fire
+    throwButton: P1_Fire
+    throwHorizontalInput: P1_Horizontal
+    throwVerticalInput: P1_Vertical
     canPunchWhileHolding: 0
-    canHaveMoreThanOneAmmo: 1
-  ammo: 9
+    canHaveMoreThanOneAmmo: 0
+  ammo: 1
   weapon: {fileID: 117266, guid: eac0c814882e8624084b86deb90b8608, type: 2}
   punch: {fileID: 0}
-  weaponSpeed: 15
+  weaponSpeed: 25
   nextFire: 0
   fireRate: 1
   launchPoints:

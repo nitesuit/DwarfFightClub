@@ -48,7 +48,8 @@ public class PlayerAttacker : MonoBehaviour {
                 Vector3 direction = weaponSpawn - transform.position;
                 o.GetComponent<Rigidbody2D>().velocity = (weaponSpawn - transform.position) * weaponSpeed;
                 if (direction.x > 0 || direction.y < 0) Flip(o);
-                o.tag = tag;
+                o.transform.parent = transform;
+                o.tag = "Hazard";
                 ammo--;
                 if (ammo == 0) weapon = null;
             }
@@ -65,16 +66,13 @@ public class PlayerAttacker : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (weapon == null && other.gameObject.layer == LayerMask.NameToLayer("Weapon") && other.tag != "Hazzard" && other.tag != "Player")
+        if (weapon == null && other.gameObject.layer == LayerMask.NameToLayer("Weapon") && other.tag != "Hazard")
         {
-            Debug.Log("Entered collision with:" + other.tag);
-            Debug.Log("Entered collision with:" + other.gameObject.layer);
-
             weapon = Resources.Load(other.tag) as GameObject;
             ammo += 1;
             Destroy(other.gameObject);
         }
-        else if(weapon != null && controls.canHaveMoreThanOneAmmo && weapon.tag == other.tag)
+        else if(weapon != null && other.gameObject.layer == LayerMask.NameToLayer("Weapon") && controls.canHaveMoreThanOneAmmo && weapon.tag == other.tag)
         {
             ammo += 1;
             Destroy(other.gameObject);
