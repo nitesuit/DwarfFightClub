@@ -4,6 +4,7 @@ using System.Collections;
 [System.Serializable]
 public class MovementControls
 {
+    public string playerIdentifier;
     public string vertical;
     public string horizontal;
 }
@@ -36,8 +37,8 @@ public class PlayerMover : MonoBehaviour {
         //Debug.Log("Immobile: " + lifeC.Immobile);
         if(!lifeC.Immobile){
 
-            float moveHorizontal = Input.GetAxis(controls.horizontal);
-            float moveVertical = Input.GetAxis(controls.vertical);
+            float moveHorizontal = Input.GetAxis(controls.playerIdentifier + controls.horizontal);
+            float moveVertical = Input.GetAxis(controls.playerIdentifier + controls.vertical);
 
             //Debug.Log("inputXY: (" + moveVertical + ", " + moveHorizontal + ")");
             if (accelerationPercent < 1)

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 [System.Serializable]
 public class CombatControls
 {
+    public string playerIdentifier; 
     public string punchButton;
     public string throwButton;
     public string throwHorizontalInput;
@@ -34,17 +35,18 @@ public class PlayerAttacker : MonoBehaviour {
     // Use this for initialization
     void Start () {
         life = GetComponent<LifeController>();
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
         if (Time.time > nextFire && life.lives>0) {
-            if (Input.GetButton(controls.throwButton) && (weapon != null && ammo>0))
+            if (Input.GetButton(controls.playerIdentifier + controls.throwButton) && (weapon != null && ammo>0))
             {
                 nextFire = Time.time + fireRate;
 
                 Vector3 weaponSpawn = DetermineLaunchPoint().position;
                 GameObject o = Instantiate(weapon, weaponSpawn, Quaternion.identity) as GameObject;
+                o.name = weapon.name;
                 Vector3 direction = weaponSpawn - transform.position;
                 o.GetComponent<Rigidbody2D>().velocity = (weaponSpawn - transform.position) * weaponSpeed;
                 if (direction.x > 0 || direction.y < 0) Flip(o);
@@ -53,7 +55,7 @@ public class PlayerAttacker : MonoBehaviour {
                 ammo--;
                 if (ammo == 0) weapon = null;
             }
-            else if(Input.GetButton(controls.punchButton) && (weapon == null || controls.canPunchWhileHolding))
+            else if(Input.GetButton(controls.playerIdentifier + controls.punchButton) && (weapon == null || controls.canPunchWhileHolding))
             {
                 nextFire = Time.time + fireRate;
 
@@ -66,13 +68,13 @@ public class PlayerAttacker : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (weapon == null && other.gameObject.layer == LayerMask.NameToLayer("Weapon") && other.tag != "Hazard")
+        if (weapon == null && other.gameObject.layer == LayerMask.NameToLayer("Weapon") && other.transform.parent!=transform)//&& other.tag != "Hazard")
         {
-            weapon = Resources.Load(other.tag) as GameObject;
+            weapon = Resources.Load(other.gameObject.name) as GameObject;
             ammo += 1;
             Destroy(other.gameObject);
         }
-        else if(weapon != null && other.gameObject.layer == LayerMask.NameToLayer("Weapon") && controls.canHaveMoreThanOneAmmo && weapon.tag == other.tag)
+        else if(weapon != null && other.gameObject.layer == LayerMask.NameToLayer("Weapon") && controls.canHaveMoreThanOneAmmo && weapon.name == other.name)
         {
             ammo += 1;
             Destroy(other.gameObject);
@@ -81,8 +83,9 @@ public class PlayerAttacker : MonoBehaviour {
 
     private Transform DetermineLaunchPoint()
     {
-        float x = Input.GetAxis(controls.throwHorizontalInput);
-        float y = Input.GetAxis(controls.throwVerticalInput);
+       
+        float x = Input.GetAxis(controls.playerIdentifier + controls.throwHorizontalInput);
+        float y = Input.GetAxis(controls.playerIdentifier + controls.throwVerticalInput);
         if (x == 0 && y == 0) return launchPoints.down;
         if (y > 0 && y >= x && y >= -x) return launchPoints.up;
         if (y < 0 && y <= x && y <= -x) return launchPoints.down;
