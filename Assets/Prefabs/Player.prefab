@@ -173,9 +173,9 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -.200000003}
+  m_Offset: {x: 0, y: -.150000006}
   serializedVersion: 2
-  m_Radius: .230000004
+  m_Radius: .200000003
 --- !u!58 &5892348
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controls:
-    playerIdentifier: P2_
+    playerIdentifier: P1_
     vertical: Vertical
     horizontal: Horizontal
   speed: 2.5
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 3
-  throwbackPower: 3
+  throwbackPower: 10
 --- !u!114 &11428680
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controls:
-    playerIdentifier: P2_
+    playerIdentifier: P1_
     punchButton: Fire
     throwButton: Fire
     throwHorizontalInput: Horizontal
@@ -258,7 +258,7 @@ MonoBehaviour:
     canHaveMoreThanOneAmmo: 0
   ammo: 1
   weapon: {fileID: 117266, guid: eac0c814882e8624084b86deb90b8608, type: 2}
-  punch: {fileID: 0}
+  punch: {fileID: 109204, guid: e047e25a9a858114bbc2c9000324b9bb, type: 2}
   weaponSpeed: 25
   nextFire: 0
   fireRate: 1
@@ -267,6 +267,7 @@ MonoBehaviour:
     right: {fileID: 401394}
     down: {fileID: 407414}
     left: {fileID: 494908}
+  punchDuration: .100000001
 --- !u!212 &21221788
 SpriteRenderer:
   m_ObjectHideFlags: 1

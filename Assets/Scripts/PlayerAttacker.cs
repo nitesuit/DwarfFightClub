@@ -32,6 +32,7 @@ public class PlayerAttacker : MonoBehaviour {
     public float fireRate;
     public Directions launchPoints;
     private LifeController life;
+    public float punchDuration;
     // Use this for initialization
     void Start () {
         life = GetComponent<LifeController>();
@@ -60,7 +61,10 @@ public class PlayerAttacker : MonoBehaviour {
                 nextFire = Time.time + fireRate;
 
                 Vector3 weaponSpawn = DetermineLaunchPoint().position;
-                Instantiate(punch, weaponSpawn, Quaternion.identity);
+                GameObject o = Instantiate(punch, weaponSpawn, Quaternion.identity) as GameObject;
+                o.transform.parent = transform;
+                o.tag = "Hazard";
+                Destroy(o, punchDuration);
             }
 
         }

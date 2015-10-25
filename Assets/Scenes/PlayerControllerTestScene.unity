@@ -191,14 +191,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11420644, guid: 16fd0475bc187274ab0d545bb9552bef, type: 2}
-      propertyPath: controls.playerIdentifier
-      value: P1_
-      objectReference: {fileID: 0}
-    - target: {fileID: 11428680, guid: 16fd0475bc187274ab0d545bb9552bef, type: 2}
-      propertyPath: controls.playerIdentifier
-      value: P1_
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 16fd0475bc187274ab0d545bb9552bef, type: 2}
   m_IsPrefabParent: 0
@@ -965,6 +957,18 @@ Prefab:
     - target: {fileID: 137242, guid: 16fd0475bc187274ab0d545bb9552bef, type: 2}
       propertyPath: m_Name
       value: Player (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 11420644, guid: 16fd0475bc187274ab0d545bb9552bef, type: 2}
+      propertyPath: controls.playerIdentifier
+      value: P2_
+      objectReference: {fileID: 0}
+    - target: {fileID: 11428680, guid: 16fd0475bc187274ab0d545bb9552bef, type: 2}
+      propertyPath: controls.playerIdentifier
+      value: P2_
+      objectReference: {fileID: 0}
+    - target: {fileID: 11425436, guid: 16fd0475bc187274ab0d545bb9552bef, type: 2}
+      propertyPath: throwbackPower
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 16fd0475bc187274ab0d545bb9552bef, type: 2}
