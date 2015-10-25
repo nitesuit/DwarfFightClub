@@ -20,11 +20,12 @@ public class AxeScript : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag != "Player")
+        if (other.gameObject.tag != "Player" )
         {
             tag = "Battle_axe";
             transform.SetParent(null);
             rb.velocity = Vector3.zero;
         }
+        
     }
 }

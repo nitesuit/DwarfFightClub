@@ -42,14 +42,29 @@ public class LifeController : MonoBehaviour {
 
     public void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("other.gameObject.tag:" + other.gameObject.tag);
+
         if (!immune && (other.gameObject.tag == "Enemy" ||
-            (other.gameObject.tag == "Hazard" && (other.transform.parent == null || other.transform.parent.name != transform.name))))
+            (other.gameObject.tag == "Hazard" && (other.transform.parent == null || other.transform.parent.name != transform.name))
+            || tag == "Breakable" && other.gameObject.layer == LayerMask.NameToLayer("Weapon")))
         {
+            
             lives--;
             immune = true;
             Immobile = true;
-            StartCoroutine(TakeDamage(other));
+            if(tag == "Player") StartCoroutine(TakeDamage(other));
+            if (lives <= 0)
+            {
+                if(tag == "Breakable")
+                {
+                    GetComponent<Animator>().SetBool("IsAlive",false);
+                    spriteRenderer.sortingLayerName = "Background";
+                    Destroy(gameObject, 0.5f);
+                    
+                }
+                die();
 
+            }
         }
     }
 
@@ -73,9 +88,8 @@ public class LifeController : MonoBehaviour {
         Immobile = false;
         rb.velocity = Vector3.zero;
         spriteRenderer.material.color = originalColor;
-        if (lives <= 0) die();
+        
     }
-
     private void die()
     {
         //Debug.Log("dydis:");
