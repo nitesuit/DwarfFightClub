@@ -42,8 +42,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Collision
+    uniqueID: 2681552173
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 710533479
     locked: 0
   - name: Background
     uniqueID: 4289058375
@@ -53,4 +59,7 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 3071529137
+    locked: 0
+  - name: Above player
+    uniqueID: 1477757823
     locked: 0
