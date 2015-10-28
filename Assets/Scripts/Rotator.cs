@@ -7,8 +7,11 @@ public class Rotator : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody2D>();
-        if (rb.velocity.x > 0 || rb.velocity.y < 0) rb.angularVelocity = -velocity;
-        else rb.angularVelocity = velocity;
+        if (tag != "Battle_axe")
+        {
+            if (rb.velocity.x > 0 || rb.velocity.y < 0) rb.angularVelocity = -velocity;
+            else rb.angularVelocity = velocity;
+        }
     }
 
     void OnTriggerExit2D(Collider2D other)

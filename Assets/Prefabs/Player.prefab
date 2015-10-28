@@ -46,6 +46,7 @@ GameObject:
   - 114: {fileID: 11420644}
   - 114: {fileID: 11425436}
   - 114: {fileID: 11428680}
+  - 82: {fileID: 8233686}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -126,8 +127,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 137242}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalPosition: {x: 4.42000008, y: 12.1199999, z: 0}
+  m_LocalScale: {x: 1.57000005, y: 1.53999996, z: 1}
   m_Children:
   - {fileID: 420060}
   - {fileID: 401394}
@@ -189,6 +190,76 @@ CircleCollider2D:
   m_Offset: {x: 0, y: .100000001}
   serializedVersion: 2
   m_Radius: .170812041
+--- !u!82 &8233686
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137242}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: .600000024
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!95 &9536360
 Animator:
   serializedVersion: 3
@@ -224,6 +295,10 @@ MonoBehaviour:
   speed: 2.5
   acceleration: 1
   beginAccelerationPercent: .100000001
+  speedBoost: 2
+  buffTimeLimit: 5
+  walkSound: {fileID: 8300000, guid: e8b427ec6a3cbc341999d1930a25b8fb, type: 3}
+  powerUpSound: {fileID: 8300000, guid: 06f6507e10ce2a7468e0897f8ac17d8d, type: 3}
 --- !u!114 &11425436
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -237,6 +312,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lives: 3
   throwbackPower: 10
+  takeHitSound: {fileID: 8300000, guid: 6a4331cf14665d14f92da10e73856c8f, type: 3}
+  dieSound: {fileID: 8300000, guid: db5ba65c7d4f2544793f1338bd22bae2, type: 3}
 --- !u!114 &11428680
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -256,8 +333,8 @@ MonoBehaviour:
     throwVerticalInput: Vertical
     canPunchWhileHolding: 0
     canHaveMoreThanOneAmmo: 0
-  ammo: 1
-  weapon: {fileID: 117266, guid: eac0c814882e8624084b86deb90b8608, type: 2}
+  ammo: 0
+  weapon: {fileID: 0}
   punch: {fileID: 109204, guid: e047e25a9a858114bbc2c9000324b9bb, type: 2}
   weaponSpeed: 25
   nextFire: 0
@@ -267,7 +344,8 @@ MonoBehaviour:
     right: {fileID: 401394}
     down: {fileID: 407414}
     left: {fileID: 494908}
-  punchDuration: .100000001
+  punchDuration: .200000003
+  pickUpSound: {fileID: 8300000, guid: ed027ba9fff632a40a1ec9b75dad6229, type: 3}
 --- !u!212 &21221788
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -308,6 +386,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_SortingLayerID
       value: 710533479
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: ammo
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

@@ -5,11 +5,14 @@ using System.Collections.Generic;
 public class LifeController : MonoBehaviour {
     public int lives = 1;
     public float throwbackPower = 3f;
+    public AudioClip takeHitSound;
+    public AudioClip dieSound;
     private bool immune = false;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private Collider2D[] colliders;
     private Color originalColor;
+    private AudioSource audioSource;
     public bool Immobile{get; set;}
 
     // Use this for initialization
@@ -17,6 +20,7 @@ public class LifeController : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         colliders = gameObject.GetComponents<Collider2D>();
+        audioSource = GetComponent<AudioSource>();
         originalColor = spriteRenderer.material.color;
         Immobile = false;
     }
@@ -52,17 +56,23 @@ public class LifeController : MonoBehaviour {
             lives--;
             immune = true;
             Immobile = true;
-            if(tag == "Player") StartCoroutine(TakeDamage(other));
+            if (tag == "Player")
+            {
+                audioSource.clip = takeHitSound;
+                audioSource.Play();
+                StartCoroutine(TakeDamage(other));
+            }
             if (lives <= 0)
             {
                 if(tag == "Breakable")
                 {
-                    GetComponent<AudioSource>().Play();
                     GetComponent<Animator>().SetBool("IsAlive",false);
                     //spriteRenderer.sortingLayerName = "Background";
                     Destroy(gameObject, 0.5f);
                     return;
                 }
+                audioSource.clip = dieSound;
+                audioSource.Play();
                 die();
 
             }

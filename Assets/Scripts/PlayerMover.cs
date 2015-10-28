@@ -16,6 +16,10 @@ public class PlayerMover : MonoBehaviour {
     public float beginAccelerationPercent = 0.1f;
     public float speedBoost = 2f;
     public float buffTimeLimit = 5f;
+    private AudioSource audioSource;
+    public AudioClip walkSound;
+    public AudioClip powerUpSound;
+
 
     private float maxSpeed;
     private Rigidbody2D rb;
@@ -28,6 +32,7 @@ public class PlayerMover : MonoBehaviour {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         lifeC = GetComponent<LifeController>();
+        audioSource = GetComponent<AudioSource>();
         maxSpeed = speed;
 	}
 	
@@ -64,6 +69,11 @@ public class PlayerMover : MonoBehaviour {
 
             if (moveHorizontal != 0 || moveVertical != 0)
             {
+                if (!audioSource.isPlaying)
+                {
+                    audioSource.clip = walkSound;
+                    audioSource.Play();
+                }
                 anim.SetBool("walking", true);
 
 
@@ -98,6 +108,7 @@ public class PlayerMover : MonoBehaviour {
             {
                 anim.SetBool("walking", false);
             }
+
             anim.SetFloat("moveHorizontal", moveHorizontal);
             anim.SetFloat("moveVertical", moveVertical);
         }
@@ -107,6 +118,8 @@ public class PlayerMover : MonoBehaviour {
     {
         if(other.tag == "SpeedBoost")
         {
+            audioSource.clip = powerUpSound;
+            audioSource.Play();
             Destroy(other.gameObject);
             StartCoroutine(SpeedBoost(speedBoost, buffTimeLimit));
         }

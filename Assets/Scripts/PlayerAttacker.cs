@@ -33,9 +33,12 @@ public class PlayerAttacker : MonoBehaviour {
     public Directions launchPoints;
     private LifeController life;
     public float punchDuration;
+    public AudioClip pickUpSound;
+    private AudioSource audioSource;
     // Use this for initialization
     void Start () {
         life = GetComponent<LifeController>();
+        audioSource = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -77,11 +80,15 @@ public class PlayerAttacker : MonoBehaviour {
             weapon = Resources.Load(other.gameObject.name) as GameObject;
             ammo += 1;
             Destroy(other.gameObject);
+            audioSource.clip = pickUpSound;
+            audioSource.Play();
         }
         else if(weapon != null && other.gameObject.layer == LayerMask.NameToLayer("Weapon") && controls.canHaveMoreThanOneAmmo && weapon.name == other.name)
         {
             ammo += 1;
             Destroy(other.gameObject);
+            audioSource.clip = pickUpSound;
+            audioSource.Play();
         }
     }
 
