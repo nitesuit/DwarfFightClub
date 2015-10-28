@@ -8,6 +8,7 @@ TagManager:
   - Battle_axe
   - Map
   - Breakable
+  - SpeedBoost
   layers:
   - Default
   - TransparentFX

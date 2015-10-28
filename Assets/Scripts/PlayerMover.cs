@@ -14,7 +14,10 @@ public class PlayerMover : MonoBehaviour {
     public float speed = 2.5f;
     public float acceleration = 0.1f;
     public float beginAccelerationPercent = 0.1f;
+    public float speedBoost = 2f;
+    public float buffTimeLimit = 5f;
 
+    private float maxSpeed;
     private Rigidbody2D rb;
     private float accelerationPercent = 0.2f;
     private LifeController lifeC;
@@ -25,6 +28,7 @@ public class PlayerMover : MonoBehaviour {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         lifeC = GetComponent<LifeController>();
+        maxSpeed = speed;
 	}
 	
 	// Update is called once per frame
@@ -97,5 +101,21 @@ public class PlayerMover : MonoBehaviour {
             anim.SetFloat("moveHorizontal", moveHorizontal);
             anim.SetFloat("moveVertical", moveVertical);
         }
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "SpeedBoost")
+        {
+            Destroy(other.gameObject);
+            StartCoroutine(SpeedBoost(speedBoost, buffTimeLimit));
+        }
+    }
+
+    private IEnumerator SpeedBoost(float boost, float time)
+    {
+        speed += boost;
+        yield return new WaitForSeconds(time);
+        speed -= boost;
     }
 }

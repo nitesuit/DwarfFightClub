@@ -42,7 +42,7 @@ public class LifeController : MonoBehaviour {
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("other.gameObject.tag:" + other.gameObject.tag);
+        //Debug.Log("other.gameObject.tag:" + other.gameObject.tag);
 
         if (!immune && (other.gameObject.tag == "Enemy" ||
             (other.gameObject.tag == "Hazard" && (other.transform.parent == null || other.transform.parent.name != transform.name))
