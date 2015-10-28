@@ -9822,7 +9822,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21221788, guid: 16fd0475bc187274ab0d545bb9552bef, type: 2}
       propertyPath: m_SortingOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 21221788, guid: 16fd0475bc187274ab0d545bb9552bef, type: 2}
       propertyPath: m_SortingLayerID
