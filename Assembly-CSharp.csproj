@@ -6,7 +6,7 @@
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
 	<RootNamespace></RootNamespace>
-	<ProjectGuid>{890CC239-FBDC-E342-E059-1E02BE6E5F55}</ProjectGuid>
+	<ProjectGuid>{9F8AB5B7-DA22-D203-977D-7A954982DC00}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,6 +45,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\GOGenerator.cs" />
+     <Compile Include="Assets\Scripts\AxeScript.cs" />
+     <Compile Include="Assets\Scripts\LifeController.cs" />
+     <Compile Include="Assets\Scripts\PlayerAttacker.cs" />
+     <Compile Include="Assets\Scripts\PlayerMover.cs" />
+     <Compile Include="Assets\Scripts\Rotator.cs" />
      <Compile Include="Assets\Tools\Tile Editor\Scripts\Class\ColliderInfo.cs" />
      <Compile Include="Assets\Tools\Tile Editor\Scripts\Class\CollisionType.cs" />
      <Compile Include="Assets\Tools\Tile Editor\Scripts\Class\Tile.cs" />
