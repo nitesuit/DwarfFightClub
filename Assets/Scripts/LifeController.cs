@@ -58,9 +58,9 @@ public class LifeController : MonoBehaviour {
                 if(tag == "Breakable")
                 {
                     GetComponent<Animator>().SetBool("IsAlive",false);
-                    spriteRenderer.sortingLayerName = "Background";
+                    //spriteRenderer.sortingLayerName = "Background";
                     Destroy(gameObject, 0.5f);
-                    
+                    return;
                 }
                 die();
 
