@@ -6,6 +6,7 @@ public class GOGenerator : MonoBehaviour {
 
 	public GameObject objectToThrow;
 	private GameObject instantiatedObject;
+	public GameObject[] positions;
 	// Use this for initialization
 	void Start () {
 	
@@ -45,7 +46,7 @@ public class GOGenerator : MonoBehaviour {
 	}
 
 	private void InstantiateAtPosition() {
-			Vector2 position  = new Vector2 (this.transform.position.x,this.transform.position.y);
+			Vector2 position  = positions[Random.Range (0,3)].transform.position;
 			GameObject go = Instantiate (objectToThrow, position, Quaternion.identity) as GameObject;
 			go.transform.parent = this.transform;
 			instantiatedObject = go;

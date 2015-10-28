@@ -48,6 +48,7 @@
      <Compile Include="Assets\GOGenerator.cs" />
      <Compile Include="Assets\Scripts\AxeScript.cs" />
      <Compile Include="Assets\Scripts\LifeController.cs" />
+     <Compile Include="Assets\Scripts\PineappleRotator.cs" />
      <Compile Include="Assets\Scripts\PlayerAttacker.cs" />
      <Compile Include="Assets\Scripts\PlayerMover.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />
