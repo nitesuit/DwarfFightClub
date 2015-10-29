@@ -110,5 +110,8 @@ public class LifeController : MonoBehaviour {
             collider.enabled = false;
         }
         Immobile = true;
+        tag = "DeadPlayer";
+        GetComponent<PlayerAttacker>().DropWeapon();
+        Destroy(gameObject,1f);
     }
 }

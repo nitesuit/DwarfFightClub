@@ -75,7 +75,7 @@ public class PlayerAttacker : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (weapon == null && other.gameObject.layer == LayerMask.NameToLayer("Weapon") && other.transform.parent!=transform)//&& other.tag != "Hazard")
+        if (weapon == null && other.gameObject.layer == LayerMask.NameToLayer("Weapon") && other.transform.parent!=transform && tag == "Player")//&& other.tag != "Hazard")
         {
             weapon = Resources.Load(other.gameObject.name) as GameObject;
             ammo += 1;
@@ -83,7 +83,7 @@ public class PlayerAttacker : MonoBehaviour {
             audioSource.clip = pickUpSound;
             audioSource.Play();
         }
-        else if(weapon != null && other.gameObject.layer == LayerMask.NameToLayer("Weapon") && controls.canHaveMoreThanOneAmmo && weapon.name == other.name)
+        else if(weapon != null && other.gameObject.layer == LayerMask.NameToLayer("Weapon") && controls.canHaveMoreThanOneAmmo && weapon.name == other.name && tag == "Player")
         {
             ammo += 1;
             Destroy(other.gameObject);
@@ -110,5 +110,17 @@ public class PlayerAttacker : MonoBehaviour {
         Vector3 theScale = obj.transform.localScale;
         theScale.x *= -1;
         obj.transform.localScale = theScale;
+    }
+
+    public void DropWeapon()
+    {
+        if (weapon != null)
+        {
+            GameObject o = Instantiate(weapon, transform.position, Quaternion.identity) as GameObject;
+            o.name = weapon.name;
+            weapon = null;
+            o.tag = "Battle_axe";
+        }
+        ammo = 0;
     }
 }
