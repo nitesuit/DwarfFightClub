@@ -12,6 +12,7 @@ GameObject:
   - 58: {fileID: 5864516}
   - 114: {fileID: 11413064}
   - 50: {fileID: 5046680}
+  - 111: {fileID: 11160346}
   m_Layer: 0
   m_Name: Pineapple
   m_TagString: SpeedBoost
@@ -60,6 +61,20 @@ CircleCollider2D:
   m_Offset: {x: .0199999996, y: -.0199999996}
   serializedVersion: 2
   m_Radius: .129999995
+--- !u!111 &11160346
+Animation:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161538}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &11413064
 MonoBehaviour:
   m_ObjectHideFlags: 1
