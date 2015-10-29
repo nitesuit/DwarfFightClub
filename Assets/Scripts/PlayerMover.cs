@@ -20,7 +20,7 @@ public class PlayerMover : MonoBehaviour {
     public AudioClip walkSound;
     public AudioClip powerUpSound;
 
-
+    
     private float maxSpeed;
     private Rigidbody2D rb;
     private float accelerationPercent = 0.2f;
@@ -80,32 +80,44 @@ public class PlayerMover : MonoBehaviour {
                 if (moveHorizontal > 0)
                 {
                     anim.SetFloat("moveHorizontal", 1f);
+                    anim.SetFloat("idleHorizontal", 1f);
+
                 }
                 else if (moveHorizontal < 0)
                 {
                     anim.SetFloat("moveHorizontal", -1f);
+                    anim.SetFloat("idleHorizontal", -1f);
+
                 }
                 else
                 {
                     anim.SetFloat("moveHorizontal", 0f);
+                    anim.SetFloat("idleHorizontal", 0f);
+
                 }
 
                 if (moveVertical > 0)
                 {
                     anim.SetFloat("moveVertical", 1f);
+                    anim.SetFloat("idleVertical", 1f);
+
                 }
                 else if (moveVertical < 0)
                 {
                     anim.SetFloat("moveVertical", -1f);
+                    anim.SetFloat("idleVertical", -1f);
+
                 }
                 else
                 {
                     anim.SetFloat("moveVertical", 0f);
+                    anim.SetFloat("idleVertical", 0f);
                 }
 
             }
             else
             {
+                Debug.Log(moveVertical + " " + moveHorizontal);
                 anim.SetBool("walking", false);
             }
 

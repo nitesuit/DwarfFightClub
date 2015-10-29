@@ -21,7 +21,7 @@ public class ChangeValueAndColor : MonoBehaviour {
 	void Update () {
 
 		slider.value = lc.lives;
-		Debug.Log (slider.value);
+//		Debug.Log (slider.value);
 	
 	}
 
