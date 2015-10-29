@@ -13,10 +13,13 @@ public class LifeController : MonoBehaviour {
     private Collider2D[] colliders;
     private Color originalColor;
     private AudioSource audioSource;
+    private Animator anim;
+
     public bool Immobile{get; set;}
 
     // Use this for initialization
     void Start () {
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         colliders = gameObject.GetComponents<Collider2D>();
@@ -109,6 +112,7 @@ public class LifeController : MonoBehaviour {
         {
             collider.enabled = false;
         }
+        anim.SetBool("death", true);
         Immobile = true;
         tag = "DeadPlayer";
         GetComponent<PlayerAttacker>().DropWeapon();
