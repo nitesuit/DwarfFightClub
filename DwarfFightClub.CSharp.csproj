@@ -51,11 +51,17 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
@@ -68,8 +74,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ChangeValueAndColor.cs" />
     <Compile Include="Assets\GOGenerator.cs" />
     <Compile Include="Assets\Scripts\AxeScript.cs" />
+    <Compile Include="Assets\Scripts\DestroyAfterTime.cs" />
     <Compile Include="Assets\Scripts\LifeController.cs" />
     <Compile Include="Assets\Scripts\PineappleRotator.cs" />
     <Compile Include="Assets\Scripts\PlayerAttacker.cs" />
