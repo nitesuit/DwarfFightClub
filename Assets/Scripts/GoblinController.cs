@@ -41,7 +41,7 @@ public class GoblinController : MonoBehaviour {
         {
             direction = new Vector2(0, 0);
         }
-
+        if (!targetLocked) direction = direction = new Vector2(0, 0);
         if (direction.magnitude > meleeRange) rb.velocity = direction.normalized * speed;
         else 
         {
