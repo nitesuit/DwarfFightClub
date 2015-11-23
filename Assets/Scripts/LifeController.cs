@@ -53,7 +53,7 @@ public class LifeController : MonoBehaviour {
 
         if (!immune && (other.gameObject.tag == "Enemy" 
             ||(other.gameObject.tag == "Hazard" && (other.transform.parent == null || other.transform.parent.name != transform.name))
-            || tag == "Breakable" && other.gameObject.layer == LayerMask.NameToLayer("Weapon")
+            
             ))
         {
             

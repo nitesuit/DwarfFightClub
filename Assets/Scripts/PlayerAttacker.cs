@@ -86,7 +86,15 @@ public class PlayerAttacker : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (weapon == null && other.gameObject.layer == LayerMask.NameToLayer("Weapon") &&
+        if (weapon == null && other.gameObject.layer == LayerMask.NameToLayer("WeaponPickup") && tag == "Player")
+        {
+            weapon = Resources.Load("Battle_Axe") as GameObject;
+            ammo += 1;
+            audioSource.clip = pickUpSound;
+            audioSource.Play();
+            return;
+        }
+            if (weapon == null && other.gameObject.layer == LayerMask.NameToLayer("Weapon") &&
             other.transform.parent != transform && tag == "Player") //&& other.tag != "Hazard")
         {
             weapon = Resources.Load(other.gameObject.name) as GameObject;
