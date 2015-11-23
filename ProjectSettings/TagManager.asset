@@ -10,6 +10,7 @@ TagManager:
   - Breakable
   - SpeedBoost
   - DeadPlayer
+  - Goblin
   layers:
   - Default
   - TransparentFX

@@ -64,7 +64,15 @@ public class PlayerMover : MonoBehaviour {
                 accelerationPercent = beginAccelerationPercent;
             }
             //Debug.Log("Acceleration percent: (" + accelerationPercent + ")");
-            Vector3 movement = new Vector3(moveHorizontal * accelerationPercent, moveVertical * accelerationPercent, 0.0f);
+            //Vector3 movement = new Vector3(moveHorizontal * accelerationPercent, moveVertical * accelerationPercent, 0.0f);
+            Vector2 movement;
+            if (Mathf.Abs(moveVertical) > 0.1f || Mathf.Abs(moveHorizontal) > 0.1f)
+            {
+                movement = new Vector2(moveHorizontal, moveVertical).normalized * accelerationPercent;
+            }else
+            {
+                movement = Vector2.zero;
+            }
             rb.velocity = movement * speed;
 
             if (moveHorizontal != 0 || moveVertical != 0)
@@ -117,7 +125,7 @@ public class PlayerMover : MonoBehaviour {
             }
             else
             {
-                Debug.Log(moveVertical + " " + moveHorizontal);
+                //Debug.Log(moveVertical + " " + moveHorizontal);
                 anim.SetBool("walking", false);
             }
 

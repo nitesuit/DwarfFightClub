@@ -42,10 +42,16 @@ public class AxeScript : MonoBehaviour {
         }
         if (other.gameObject.tag != "Player" )
         {
-            tag = "Battle_axe";
-            transform.SetParent(null);
-            rb.velocity = Vector3.zero;
+            StartCoroutine(Rename());
         }
         
+    }
+
+    IEnumerator Rename()
+    {
+        yield return new WaitForEndOfFrame();
+        tag = "Battle_axe";
+        transform.SetParent(null);
+        rb.velocity = Vector3.zero;
     }
 }

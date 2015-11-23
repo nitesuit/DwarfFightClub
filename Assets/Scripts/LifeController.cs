@@ -51,9 +51,10 @@ public class LifeController : MonoBehaviour {
     {
         //Debug.Log("other.gameObject.tag:" + other.gameObject.tag);
 
-        if (!immune && (other.gameObject.tag == "Enemy" ||
-            (other.gameObject.tag == "Hazard" && (other.transform.parent == null || other.transform.parent.name != transform.name))
-            || tag == "Breakable" && other.gameObject.layer == LayerMask.NameToLayer("Weapon")))
+        if (!immune && (other.gameObject.tag == "Enemy" 
+            ||(other.gameObject.tag == "Hazard" && (other.transform.parent == null || other.transform.parent.name != transform.name))
+            || tag == "Breakable" && other.gameObject.layer == LayerMask.NameToLayer("Weapon")
+            ))
         {
             
             lives--;
@@ -65,18 +66,22 @@ public class LifeController : MonoBehaviour {
                 audioSource.Play();
                 StartCoroutine(TakeDamage(other));
             }
+            if(tag == "Goblin")
+            {
+                StartCoroutine(TakeDamage(other));
+            }
             if (lives <= 0)
             {
-                if(tag == "Breakable")
+                if(tag == "Breakable" || tag == "Goblin")
                 {
                     GetComponent<Animator>().SetBool("IsAlive",false);
                     //spriteRenderer.sortingLayerName = "Background";
-                    Destroy(gameObject, 0.5f);
+                    Destroy(gameObject, 0.55f);
                     return;
                 }
                 audioSource.clip = dieSound;
                 audioSource.Play();
-                die();
+                if(tag == "Player") die();
 
             }
         }
