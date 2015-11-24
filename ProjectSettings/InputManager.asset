@@ -437,3 +437,51 @@ InputManager:
     type: 2
     axis: 5
     joyNum: 3
+  - serializedVersion: 3
+    m_Name: P5_Vertical
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: h
+    positiveButton: y
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 3
+    dead: .00100000005
+    sensitivity: 3
+    snap: 1
+    invert: 0
+    type: 0
+    axis: 5
+    joyNum: 3
+  - serializedVersion: 3
+    m_Name: P5_Horizontal
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: g
+    positiveButton: j
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 3
+    dead: .00100000005
+    sensitivity: 3
+    snap: 1
+    invert: 0
+    type: 0
+    axis: 5
+    joyNum: 3
+  - serializedVersion: 3
+    m_Name: P5_Fire
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: space
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 3
+    dead: .00100000005
+    sensitivity: 3
+    snap: 1
+    invert: 0
+    type: 0
+    axis: 5
+    joyNum: 3
