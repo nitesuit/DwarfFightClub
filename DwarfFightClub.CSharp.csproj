@@ -70,6 +70,7 @@
   <ItemGroup>
     <Compile Include="Assets\ChangeValueAndColor.cs" />
     <Compile Include="Assets\GOGenerator.cs" />
+    <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Scripts\AxeScript.cs" />
     <Compile Include="Assets\Scripts\DestroyAfterTime.cs" />
     <Compile Include="Assets\Scripts\GoblinController.cs" />

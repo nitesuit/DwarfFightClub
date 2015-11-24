@@ -78,7 +78,7 @@ public class PlayerAttacker : MonoBehaviour
                 Vector3 weaponSpawn = DetermineLaunchPoint().position;
                 GameObject o = Instantiate(punch, weaponSpawn, Quaternion.identity) as GameObject;
                 o.transform.parent = transform;
-                o.tag = "Hazard";
+                o.tag = "Punch";
                 Destroy(o, punchDuration);
             }
         }
