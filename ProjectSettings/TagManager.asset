@@ -13,6 +13,7 @@ TagManager:
   - Goblin
   - AxeBarrel
   - WeaponPickup
+  - Punch
   layers:
   - Default
   - TransparentFX

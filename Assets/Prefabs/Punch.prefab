@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 483542}
   - 58: {fileID: 5899966}
   - 82: {fileID: 8259500}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Punch
   m_TagString: Untagged
   m_Icon: {fileID: -3114416830163030229, guid: 0000000000000000d000000000000000, type: 0}
@@ -130,6 +130,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

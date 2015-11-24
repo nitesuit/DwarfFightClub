@@ -35,8 +35,10 @@ public class LifeController : MonoBehaviour {
 
     public void OnCollisionEnter2D(Collision2D other)
     {
-        if (!immune && (other.gameObject.tag == "Enemy" || 
-            (other.gameObject.tag == "Hazard" && (other.transform.parent == null || other.transform.parent.name != transform.name))))
+        if (!immune && (
+            other.gameObject.tag == "Enemy" 
+            || (other.gameObject.tag == "Hazard" 
+            && (other.transform.parent == null || other.transform.parent.name != transform.name))))
         {
 
             lives--;
@@ -52,12 +54,12 @@ public class LifeController : MonoBehaviour {
         //Debug.Log("other.gameObject.tag:" + other.gameObject.tag);
 
         if (!immune && (other.gameObject.tag == "Enemy" 
-            ||(other.gameObject.tag == "Hazard" && (other.transform.parent == null || other.transform.parent.name != transform.name))
-            
+            ||((other.gameObject.tag == "Hazard" || other.gameObject.tag == "Punch")
+            && (other.transform.parent == null || other.transform.parent.name != transform.name))
             ))
         {
             
-            lives--;
+            if(!(other.tag == "Punch" && tag == "Player" && other.transform.parent.tag == "Player"))lives--;
             immune = true;
             Immobile = true;
             if (tag == "Player")
