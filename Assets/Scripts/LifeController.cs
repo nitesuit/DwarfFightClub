@@ -80,8 +80,8 @@ public class LifeController : MonoBehaviour {
             && (other.transform.parent == null || other.transform.parent.name != transform.name))
             ))
         {
-            
-            if(!(other.tag == "Punch" && tag == "Player" && other.transform.parent.tag == "Player"))lives--;
+
+            if (!(other.tag == "Punch" && tag == other.transform.parent.tag)) lives--;//tag == "Player" && other.transform.parent.tag == "Player"))lives--;
             immune = true;
             Immobile = true;
             if (tag == "Player")

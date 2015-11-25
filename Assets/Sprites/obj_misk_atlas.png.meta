@@ -1,0 +1,2575 @@
+fileFormatVersion: 2
+guid: e94061fd4339e494fb10548f3c03e4ef
+timeCreated: 1448463021
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: obj_misk_atlas_0
+    21300002: obj_misk_atlas_1
+    21300004: obj_misk_atlas_2
+    21300006: obj_misk_atlas_3
+    21300008: obj_misk_atlas_4
+    21300010: obj_misk_atlas_5
+    21300012: obj_misk_atlas_6
+    21300014: obj_misk_atlas_7
+    21300016: obj_misk_atlas_8
+    21300018: obj_misk_atlas_9
+    21300020: obj_misk_atlas_10
+    21300022: obj_misk_atlas_11
+    21300024: obj_misk_atlas_12
+    21300026: obj_misk_atlas_13
+    21300028: obj_misk_atlas_14
+    21300030: obj_misk_atlas_15
+    21300032: obj_misk_atlas_16
+    21300034: obj_misk_atlas_17
+    21300036: obj_misk_atlas_18
+    21300038: obj_misk_atlas_19
+    21300040: obj_misk_atlas_20
+    21300042: obj_misk_atlas_21
+    21300044: obj_misk_atlas_22
+    21300046: obj_misk_atlas_23
+    21300048: obj_misk_atlas_24
+    21300050: obj_misk_atlas_25
+    21300052: obj_misk_atlas_26
+    21300054: obj_misk_atlas_27
+    21300056: obj_misk_atlas_28
+    21300058: obj_misk_atlas_29
+    21300060: obj_misk_atlas_30
+    21300062: obj_misk_atlas_31
+    21300064: obj_misk_atlas_32
+    21300066: obj_misk_atlas_33
+    21300068: obj_misk_atlas_34
+    21300070: obj_misk_atlas_35
+    21300072: obj_misk_atlas_36
+    21300074: obj_misk_atlas_37
+    21300076: obj_misk_atlas_38
+    21300078: obj_misk_atlas_39
+    21300080: obj_misk_atlas_40
+    21300082: obj_misk_atlas_41
+    21300084: obj_misk_atlas_42
+    21300086: obj_misk_atlas_43
+    21300088: obj_misk_atlas_44
+    21300090: obj_misk_atlas_45
+    21300092: obj_misk_atlas_46
+    21300094: obj_misk_atlas_47
+    21300096: obj_misk_atlas_48
+    21300098: obj_misk_atlas_49
+    21300100: obj_misk_atlas_50
+    21300102: obj_misk_atlas_51
+    21300104: obj_misk_atlas_52
+    21300106: obj_misk_atlas_53
+    21300108: obj_misk_atlas_54
+    21300110: obj_misk_atlas_55
+    21300112: obj_misk_atlas_56
+    21300114: obj_misk_atlas_57
+    21300116: obj_misk_atlas_58
+    21300118: obj_misk_atlas_59
+    21300120: obj_misk_atlas_60
+    21300122: obj_misk_atlas_61
+    21300124: obj_misk_atlas_62
+    21300126: obj_misk_atlas_63
+    21300128: obj_misk_atlas_64
+    21300130: obj_misk_atlas_65
+    21300132: obj_misk_atlas_66
+    21300134: obj_misk_atlas_67
+    21300136: obj_misk_atlas_68
+    21300138: obj_misk_atlas_69
+    21300140: obj_misk_atlas_70
+    21300142: obj_misk_atlas_71
+    21300144: obj_misk_atlas_72
+    21300146: obj_misk_atlas_73
+    21300148: obj_misk_atlas_74
+    21300150: obj_misk_atlas_75
+    21300152: obj_misk_atlas_76
+    21300154: obj_misk_atlas_77
+    21300156: obj_misk_atlas_78
+    21300158: obj_misk_atlas_79
+    21300160: obj_misk_atlas_80
+    21300162: obj_misk_atlas_81
+    21300164: obj_misk_atlas_82
+    21300166: obj_misk_atlas_83
+    21300168: obj_misk_atlas_84
+    21300170: obj_misk_atlas_85
+    21300172: obj_misk_atlas_86
+    21300174: obj_misk_atlas_87
+    21300176: obj_misk_atlas_88
+    21300178: obj_misk_atlas_89
+    21300180: obj_misk_atlas_90
+    21300182: obj_misk_atlas_91
+    21300184: obj_misk_atlas_92
+    21300186: obj_misk_atlas_93
+    21300188: obj_misk_atlas_94
+    21300190: obj_misk_atlas_95
+    21300192: obj_misk_atlas_96
+    21300194: obj_misk_atlas_97
+    21300196: obj_misk_atlas_98
+    21300198: obj_misk_atlas_99
+    21300200: obj_misk_atlas_100
+    21300202: obj_misk_atlas_101
+    21300204: obj_misk_atlas_102
+    21300206: obj_misk_atlas_103
+    21300208: obj_misk_atlas_104
+    21300210: obj_misk_atlas_105
+    21300212: obj_misk_atlas_106
+    21300214: obj_misk_atlas_107
+    21300216: obj_misk_atlas_108
+    21300218: obj_misk_atlas_109
+    21300220: obj_misk_atlas_110
+    21300222: obj_misk_atlas_111
+    21300224: obj_misk_atlas_112
+    21300226: obj_misk_atlas_113
+    21300228: obj_misk_atlas_114
+    21300230: obj_misk_atlas_115
+    21300232: obj_misk_atlas_116
+    21300234: obj_misk_atlas_117
+    21300236: obj_misk_atlas_118
+    21300238: obj_misk_atlas_119
+    21300240: obj_misk_atlas_120
+    21300242: obj_misk_atlas_121
+    21300244: obj_misk_atlas_122
+    21300246: obj_misk_atlas_123
+    21300248: obj_misk_atlas_124
+    21300250: obj_misk_atlas_125
+    21300252: obj_misk_atlas_126
+    21300254: obj_misk_atlas_127
+    21300256: obj_misk_atlas_128
+    21300258: obj_misk_atlas_129
+    21300260: obj_misk_atlas_130
+    21300262: obj_misk_atlas_131
+    21300264: obj_misk_atlas_132
+    21300266: obj_misk_atlas_133
+    21300268: obj_misk_atlas_134
+    21300270: obj_misk_atlas_135
+    21300272: obj_misk_atlas_136
+    21300274: obj_misk_atlas_137
+    21300276: obj_misk_atlas_138
+    21300278: obj_misk_atlas_139
+    21300280: obj_misk_atlas_140
+    21300282: obj_misk_atlas_141
+    21300284: obj_misk_atlas_142
+    21300286: obj_misk_atlas_143
+    21300288: obj_misk_atlas_144
+    21300290: obj_misk_atlas_145
+    21300292: obj_misk_atlas_146
+    21300294: obj_misk_atlas_147
+    21300296: obj_misk_atlas_148
+    21300298: obj_misk_atlas_149
+    21300300: obj_misk_atlas_150
+    21300302: obj_misk_atlas_151
+    21300304: obj_misk_atlas_152
+    21300306: obj_misk_atlas_153
+    21300308: obj_misk_atlas_154
+    21300310: obj_misk_atlas_155
+    21300312: obj_misk_atlas_156
+    21300314: obj_misk_atlas_157
+    21300316: obj_misk_atlas_158
+    21300318: obj_misk_atlas_159
+    21300320: obj_misk_atlas_160
+    21300322: obj_misk_atlas_161
+    21300324: obj_misk_atlas_162
+    21300326: obj_misk_atlas_163
+    21300328: obj_misk_atlas_164
+    21300330: obj_misk_atlas_165
+    21300332: obj_misk_atlas_166
+    21300334: obj_misk_atlas_167
+    21300336: obj_misk_atlas_168
+    21300338: obj_misk_atlas_169
+    21300340: obj_misk_atlas_170
+    21300342: obj_misk_atlas_171
+    21300344: obj_misk_atlas_172
+    21300346: obj_misk_atlas_173
+    21300348: obj_misk_atlas_174
+    21300350: obj_misk_atlas_175
+    21300352: obj_misk_atlas_176
+    21300354: obj_misk_atlas_177
+    21300356: obj_misk_atlas_178
+    21300358: obj_misk_atlas_179
+    21300360: obj_misk_atlas_180
+    21300362: obj_misk_atlas_181
+    21300364: obj_misk_atlas_182
+    21300366: obj_misk_atlas_183
+    21300368: obj_misk_atlas_184
+    21300370: obj_misk_atlas_185
+    21300372: obj_misk_atlas_186
+    21300374: obj_misk_atlas_187
+    21300376: obj_misk_atlas_188
+    21300378: obj_misk_atlas_189
+    21300380: obj_misk_atlas_190
+    21300382: obj_misk_atlas_191
+    21300384: obj_misk_atlas_192
+    21300386: obj_misk_atlas_193
+    21300388: obj_misk_atlas_194
+    21300390: obj_misk_atlas_195
+    21300392: obj_misk_atlas_196
+    21300394: obj_misk_atlas_197
+    21300396: obj_misk_atlas_198
+    21300398: obj_misk_atlas_199
+    21300400: obj_misk_atlas_200
+    21300402: obj_misk_atlas_201
+    21300404: obj_misk_atlas_202
+    21300406: obj_misk_atlas_203
+    21300408: obj_misk_atlas_204
+    21300410: obj_misk_atlas_205
+    21300412: obj_misk_atlas_206
+    21300414: obj_misk_atlas_207
+    21300416: obj_misk_atlas_208
+    21300418: obj_misk_atlas_209
+    21300420: obj_misk_atlas_210
+    21300422: obj_misk_atlas_211
+    21300424: obj_misk_atlas_212
+    21300426: obj_misk_atlas_213
+    21300428: obj_misk_atlas_214
+    21300430: obj_misk_atlas_215
+    21300432: obj_misk_atlas_216
+    21300434: obj_misk_atlas_217
+    21300436: obj_misk_atlas_218
+    21300438: obj_misk_atlas_219
+    21300440: obj_misk_atlas_220
+    21300442: obj_misk_atlas_221
+    21300444: obj_misk_atlas_222
+    21300446: obj_misk_atlas_223
+    21300448: obj_misk_atlas_224
+    21300450: obj_misk_atlas_225
+    21300452: obj_misk_atlas_226
+    21300454: obj_misk_atlas_227
+    21300456: obj_misk_atlas_228
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 64
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: obj_misk_atlas_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 997
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 992
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 993
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 992
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_4
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 997
+        width: 30
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_5
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 994
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_6
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 997
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_7
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 994
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_8
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 997
+        width: 30
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_9
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 992
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_10
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 993
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_11
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 992
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_12
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 997
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_13
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 994
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_14
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 997
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_15
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 994
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_16
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 930
+        width: 76
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_17
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 997
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_18
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 997
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_19
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 996
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_20
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 998
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_21
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 919
+        width: 96
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_22
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 896
+        width: 16
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_23
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 896
+        width: 16
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_24
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 919
+        width: 32
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_25
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 983
+        width: 8
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_26
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 960
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_27
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 960
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_28
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 960
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_29
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 960
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_30
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 960
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_31
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 960
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_32
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 960
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_33
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 960
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_34
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 962
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_35
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 960
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_36
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 961
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_37
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 960
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_38
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 962
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_39
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 962
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_40
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 962
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_41
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 962
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_42
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 966
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_43
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 964
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_44
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 967
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_45
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 966
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_46
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 929
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_47
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 928
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_48
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 929
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_49
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 928
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_50
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 929
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_51
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 929
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_52
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 929
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_53
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 929
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_54
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 933
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_55
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 928
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_56
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 929
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_57
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 928
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_58
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 933
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_59
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 930
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_60
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 933
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_61
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 930
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_62
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 932
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_63
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 931
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_64
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 934
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_65
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 933
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_66
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 919
+        width: 8
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_67
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 224
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_68
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 896
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_69
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 898
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_70
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 896
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_71
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 897
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_72
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 896
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_73
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 898
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_74
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 898
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_75
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 898
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_76
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 898
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_77
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 896
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_78
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 901
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_79
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 902
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_80
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 897
+        width: 29
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_81
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 899
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_82
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 899
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_83
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 902
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_84
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 672
+        width: 107
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_85
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 672
+        width: 89
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_86
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 822
+        width: 64
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_87
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 544
+        width: 544
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_88
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 624
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_89
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 608
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_90
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 612
+        width: 52
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_91
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 416
+        width: 352
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_92
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 480
+        width: 96
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_93
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 560
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_94
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 576
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_95
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 544
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_96
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 544
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_97
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 486
+        width: 52
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_98
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 512
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_99
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 512
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 496
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_101
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 512
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_102
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 486
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_103
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 160
+        width: 256
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_104
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 480
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_105
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 451
+        width: 73
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_106
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 454
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_107
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_108
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 448
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_109
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 422
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_110
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 456
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_111
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 441
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_112
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 456
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_113
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 416
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_114
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 384
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_115
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 424
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_116
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 429
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_117
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_118
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 422
+        width: 55
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_119
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 390
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_120
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 421
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_121
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 386
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_122
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 342
+        width: 95
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_123
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 389
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_124
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 389
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_125
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 388
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_126
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 388
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_127
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 389
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_128
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 385
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_129
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 392
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_130
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 384
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_131
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 398
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_132
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 386
+        width: 55
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_133
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 370
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_134
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 364
+        width: 44
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_135
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 376
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_136
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 386
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_137
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 355
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_138
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 355
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_139
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 356
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_140
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 355
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_141
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 354
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_142
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 354
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_143
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 353
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_144
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 360
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_145
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 373
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_146
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 357
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_147
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 375
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_148
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 364
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_149
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 355
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_150
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 355
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_151
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 357
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_152
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 354
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_153
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 357
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_154
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 354
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_155
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 322
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_156
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 310
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_157
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 328
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_158
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 310
+        width: 255
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_159
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 326
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_160
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 317
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_161
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 328
+        width: 55
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_162
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 324
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_163
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 261
+        width: 18
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_164
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 306
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_165
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 296
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_166
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 311
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_167
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 291
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_168
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 296
+        width: 56
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_169
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 294
+        width: 64
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_170
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 289
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_171
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 290
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_172
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 294
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_173
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 244
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_174
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 260
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_175
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 241
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_176
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 161
+        width: 467
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_177
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 256
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_178
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 228
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_179
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 192
+        width: 80
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_180
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 178
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_181
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 194
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_182
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 182
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_183
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 170
+        width: 55
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_184
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 159
+        width: 123
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_185
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 129
+        width: 61
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_186
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 195
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_187
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 162
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_188
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 167
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_189
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 128
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_190
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 116
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_191
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 132
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_192
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 112
+        width: 48
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_193
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 135
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_194
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 99
+        width: 127
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_195
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 97
+        width: 127
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_196
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 130
+        width: 48
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_197
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 103
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_198
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 0
+        width: 288
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_199
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 100
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_200
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 103
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_201
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 5
+        width: 64
+        height: 123
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_202
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 98
+        width: 48
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_203
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 32
+        width: 51
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_204
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 48
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_205
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 64
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_206
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 48
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_207
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 48
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_208
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 48
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_209
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 68
+        width: 61
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_210
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_211
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 0
+        width: 48
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_212
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 0
+        width: 48
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_213
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 64
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_214
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 64
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_215
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 0
+        width: 86
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_216
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 26
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_217
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 33
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_218
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 32
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_219
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 16
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_220
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 32
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_221
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 12
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_222
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 0
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_223
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 16
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_224
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 0
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_225
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 0
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_226
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 0
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_227
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 6
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: obj_misk_atlas_228
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 0
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
