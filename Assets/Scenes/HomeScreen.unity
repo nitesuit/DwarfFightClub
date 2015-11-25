@@ -3923,6 +3923,7 @@ MonoBehaviour:
   backButton: {fileID: 1625959543}
   Disabled: {fileID: 1299376804}
   IsNextLevelWindow: 0
+  StartButton: {fileID: 771425570}
 --- !u!114 &895890291
 MonoBehaviour:
   m_ObjectHideFlags: 0

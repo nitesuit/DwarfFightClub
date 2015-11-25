@@ -374,7 +374,9 @@ MonoBehaviour:
   LevelImage: {fileID: 11410644}
   forwardButton: {fileID: 11439850}
   backButton: {fileID: 11410182}
+  Disabled: {fileID: 0}
   IsNextLevelWindow: 1
+  StartButton: {fileID: 11457714}
 --- !u!114 &11438394
 MonoBehaviour:
   m_ObjectHideFlags: 1

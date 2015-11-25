@@ -112,7 +112,7 @@ public class LifeController : MonoBehaviour {
 
 					if (tag=="Goblin") {
 						if (other.transform.parent.tag == "Player") {
-							GameManager.PlayerLevelPoints[other.GetComponent<PlayerAttacker>().controls.playerIdentifier]++;
+							GameManager.PlayerLevelPoints[other.transform.parent.gameObject.GetComponent<PlayerAttacker>().controls.playerIdentifier]++;
 						}
 					}
 

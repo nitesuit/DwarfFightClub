@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour {
 	private static List<string> _playingLevelList;
 	private int _selectedGameMode;
 	private static string _nextLevel;
+	public static string LevelWinnerIdentifier;
 	public string [] Scenes;
 	public static string[] ScenesArray;
 	public GameObject NextLevelScreen;
