@@ -21,16 +21,16 @@ public class GOGenerator : MonoBehaviour {
 
 	public void OnCollisionEnter2D(Collision2D other)
 	{
-		if (other.gameObject.tag == "Hazard" || other.gameObject.tag == "Battle_axe")
+		if (other.gameObject.tag == "Hazard" || other.gameObject.tag == "Battle_axe" || other.gameObject.tag == "Punch")
 			InstantiateObject ();
-		Debug.Log ("kolizija");
+		//Debug.Log ("kolizija");
 	}
 	
 	public void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.gameObject.tag == "Hazard" || other.gameObject.tag == "Battle_axe")
+		if (other.gameObject.tag == "Hazard" || other.gameObject.tag == "Battle_axe" || other.gameObject.tag == "Punch")
 			InstantiateObject ();
-		Debug.Log ("trigeris");
+		//Debug.Log ("trigeris");
 	}
 
 	private void InstantiateObject() {
