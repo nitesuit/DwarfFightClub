@@ -95,7 +95,7 @@ public class PlayerAttacker : MonoBehaviour
             return;
         }
             if (weapon == null && other.gameObject.layer == LayerMask.NameToLayer("Weapon") &&
-            other.transform.parent != transform && tag == "Player") //&& other.tag != "Hazard")
+            other.transform.parent != transform && tag == "Player" && other.tag != "Punch") //&& other.tag != "Hazard")
         {
             weapon = Resources.Load(other.gameObject.name) as GameObject;
             ammo += 1;

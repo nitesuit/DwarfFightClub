@@ -33,19 +33,41 @@ public class LifeController : MonoBehaviour {
 	    
 	}
 
-    public void OnCollisionEnter2D(Collision2D other)
+    public void OnCollisionStay2D(Collision2D other)
     {
         if (!immune && (
             other.gameObject.tag == "Enemy" 
             || (other.gameObject.tag == "Hazard" 
             && (other.transform.parent == null || other.transform.parent.name != transform.name))))
         {
-
             lives--;
             immune = true;
-            Immobile = true;
-            StartCoroutine(TakeDamage(other.collider));
-            
+            if (other.collider.name != "LavaPit") Immobile = true;
+            if (tag == "Player")
+            {
+                audioSource.clip = takeHitSound;
+                audioSource.Play();
+                if (lives > 0) StartCoroutine(TakeDamage(other.contacts[0].point));
+            }
+            if (tag == "Goblin")
+            {
+                StartCoroutine(TakeDamage(other.contacts[0].point));
+            }
+            if (lives <= 0)
+            {
+                if (tag == "Breakable" || tag == "Goblin")
+                {
+                    GetComponent<Animator>().SetBool("IsAlive", false);
+                    //spriteRenderer.sortingLayerName = "Background";
+                    Destroy(gameObject, 0.55f);
+                    return;
+                }
+                audioSource.clip = dieSound;
+                audioSource.Play();
+                if (tag == "Player") die();
+
+            }
+
         }
     }
 
@@ -66,11 +88,11 @@ public class LifeController : MonoBehaviour {
             {
                 audioSource.clip = takeHitSound;
                 audioSource.Play();
-                StartCoroutine(TakeDamage(other));
+                StartCoroutine(TakeDamage(other.transform.position));
             }
             if(tag == "Goblin")
             {
-                StartCoroutine(TakeDamage(other));
+                StartCoroutine(TakeDamage(other.transform.position));
             }
             if (lives <= 0)
             {
@@ -89,9 +111,9 @@ public class LifeController : MonoBehaviour {
         }
     }
 
-    IEnumerator TakeDamage(Collider2D other)
+    IEnumerator TakeDamage(Vector3 collisionPoint)
     {
-        Vector3 throwback = (other.transform.position - transform.position) * -throwbackPower;
+        Vector3 throwback = (collisionPoint - transform.position).normalized * -throwbackPower;
         for (float f = 3f; f >= 0; f -= 1f)
         {
             rb.velocity = throwback;
