@@ -3174,6 +3174,10 @@ Prefab:
       propertyPath: ClickSound
       value: 
       objectReference: {fileID: 1680511535}
+    - target: {fileID: 11414194, guid: 582b877ac1a354cd18b1289853f693ef, type: 2}
+      propertyPath: PlayersArray.Array.data[2]
+      value: 
+      objectReference: {fileID: 137242, guid: 069b2e6eb76e696419da57c14d8bef6e, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 582b877ac1a354cd18b1289853f693ef, type: 2}
   m_IsPrefabParent: 0
