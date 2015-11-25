@@ -59,7 +59,12 @@ public class LifeController : MonoBehaviour {
             ))
         {
             
-            if(!(other.tag == "Punch" && tag == "Player" && other.transform.parent.tag == "Player"))lives--;
+            if(!(other.tag == "Punch" && tag == "Player" && other.transform.parent.tag == "Player"))
+			{
+				lives--; 
+
+			
+			}
             immune = true;
             Immobile = true;
             if (tag == "Player")
@@ -79,8 +84,17 @@ public class LifeController : MonoBehaviour {
                     GetComponent<Animator>().SetBool("IsAlive",false);
                     //spriteRenderer.sortingLayerName = "Background";
                     Destroy(gameObject, 0.55f);
+
+					if (tag=="Goblin") {
+						if (other.transform.parent.tag == "Player") {
+							GameManager.PlayerLevelPoints[other.GetComponent<PlayerAttacker>().controls.playerIdentifier]++;
+						}
+					}
+
                     return;
                 }
+			
+
                 audioSource.clip = dieSound;
                 audioSource.Play();
                 if(tag == "Player") die();
@@ -120,6 +134,7 @@ public class LifeController : MonoBehaviour {
             collider.enabled = false;
         }
         anim.SetBool("death", true);
+		GameManager.PlayerDied (GetComponent<PlayerAttacker> ().controls.playerIdentifier);
         Immobile = true;
         tag = "DeadPlayer";
         GetComponent<PlayerAttacker>().DropWeapon();

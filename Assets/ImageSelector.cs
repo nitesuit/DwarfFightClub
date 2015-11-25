@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Collections.Generic;
+
 public class ImageSelector : MonoBehaviour {
 
 	public Sprite[] Players;
@@ -18,6 +20,7 @@ public class ImageSelector : MonoBehaviour {
 	void Awake () {
 		_horizontalAxis = Axis + "Horizontal";
 		_fireAxis = Axis + "Fire";
+		GameManager.PlayerIdentifierSprite = new Dictionary<string, Sprite> ();
 	
 	}
 	void Start() {
@@ -70,6 +73,7 @@ public class ImageSelector : MonoBehaviour {
 				GameManager.SelectedPlayerIndex.Add(_selectedIndex);
 				GameManager.Players[_selectedIndex].GetComponent<PlayerMover>().controls.playerIdentifier = Axis;
 				GameManager.Players[_selectedIndex].GetComponent<PlayerAttacker>().controls.playerIdentifier = Axis;
+				GameManager.PlayerIdentifierSprite.Add(Axis,Players[_selectedIndex]);
 				Ready.SetActive(true);
 			}
 		}
