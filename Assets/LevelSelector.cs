@@ -12,6 +12,7 @@ public class LevelSelector : MonoBehaviour {
 	public GameObject Disabled;
 	public bool IsNextLevelWindow;
 	public Button StartButton;
+	private int _counter=0;
 	// Use this for initialization
 	void Start () {
 		SetLevel ();
@@ -28,7 +29,8 @@ public class LevelSelector : MonoBehaviour {
 		} else {
 			if (Disabled.activeSelf) {
 				ChangeLevel ("P1_Horizontal");
-				ButtonIvoke("P1_Fire");
+				if (_counter>0)ButtonIvoke("P1_Fire");
+				_counter++;
 			}
 		}
 
@@ -97,7 +99,10 @@ public class LevelSelector : MonoBehaviour {
 
 	private void ButtonIvoke(string btn) {
 		if (Input.GetButtonDown (btn)) {
-		
+			
+			ColorBlock cb = StartButton.colors;
+			cb.normalColor = new Color(cb.normalColor.r,cb.normalColor.g,cb.normalColor.b,0.5f);
+			StartButton.colors = cb;
 			StartButton.onClick.Invoke();
 		}
 	}

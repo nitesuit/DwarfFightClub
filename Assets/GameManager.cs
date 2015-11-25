@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using System.Linq;
 public class GameManager : MonoBehaviour {
 
@@ -21,6 +22,7 @@ public class GameManager : MonoBehaviour {
 	public static GameObject NextLevelCanvas;
 	public GameObject EndGameScreen;
 	public static GameObject EndGameCanvas;
+	public AudioSource ClickSound;
 	// Use this for initialization
 	public int GameMode;
 
@@ -30,6 +32,7 @@ public class GameManager : MonoBehaviour {
 		ScenesArray = Scenes;
 		NextLevelCanvas = NextLevelScreen;
 		EndGameCanvas = EndGameScreen;
+		CreateSounds ();
 	}
 
 	void Start () {
@@ -228,7 +231,25 @@ public class GameManager : MonoBehaviour {
 		GameObject go = GameObject.Instantiate (EndGameCanvas, new Vector3(0f,0f,0f),new Quaternion()) as GameObject;
 		
 	}
+
+	private void CreateSounds() {
+
+		Button[] buttons = FindObjectsOfType<Button> ();
+
+		foreach (var button in buttons) {
+		
+			button.onClick.AddListener(() => { PlaySound(); }); 
+		}
 	
+
+
+	}
+	private void PlaySound() {
+
+		ClickSound.Play ();
+		CreateSounds ();
+
+	}
 
 	}
 
