@@ -1331,7 +1331,7 @@ MonoBehaviour:
   - {fileID: 21300344, guid: 9a8384657c8c1a04385f693fb5dda7cf, type: 3}
   - {fileID: 21300344, guid: e11f3548618ee784aa1b6e8f055b874c, type: 3}
   - {fileID: 21300344, guid: 94e0702e76f61854f80a23b8932c9d21, type: 3}
-  Axis: P5_
+  Axis: P2_
   playerImage: {fileID: 73855911}
   forwardButton: {fileID: 191892374}
   backButton: {fileID: 657853123}
@@ -3768,7 +3768,7 @@ MonoBehaviour:
   - {fileID: 21300344, guid: 9a8384657c8c1a04385f693fb5dda7cf, type: 3}
   - {fileID: 21300344, guid: e11f3548618ee784aa1b6e8f055b874c, type: 3}
   - {fileID: 21300344, guid: 94e0702e76f61854f80a23b8932c9d21, type: 3}
-  Axis: P4_
+  Axis: P5_
   playerImage: {fileID: 907430272}
   forwardButton: {fileID: 2147067054}
   backButton: {fileID: 1993979865}
