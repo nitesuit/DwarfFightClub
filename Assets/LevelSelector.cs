@@ -85,4 +85,5 @@ public class LevelSelector : MonoBehaviour {
 	public void StartNextLevel() {
 		GameManager.StartNextLevel ();
 	}
+
 }

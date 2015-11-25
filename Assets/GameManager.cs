@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour {
 	public static string[] ScenesArray;
 	public GameObject NextLevelScreen;
 	public static GameObject NextLevelCanvas;
+	public GameObject EndGameScreen;
+	public static GameObject EndGameCanvas;
 	// Use this for initialization
 	public int GameMode;
 
@@ -26,6 +28,7 @@ public class GameManager : MonoBehaviour {
 		Players = PlayersArray;
 		ScenesArray = Scenes;
 		NextLevelCanvas = NextLevelScreen;
+		EndGameCanvas = EndGameScreen;
 	}
 
 	void Start () {
@@ -135,8 +138,12 @@ public class GameManager : MonoBehaviour {
 
 		if (_playingLevelList.Count == 0) {
 			//game end
-			Application.LoadLevel ("HomeScreen");
-		} else {
+			ConvertLevelPoints();
+			SumPoints();
+			ConvertPoints();
+			ShowEndGameScreen();
+		}
+		else {
 		
 			ConvertLevelPoints();
 			SumPoints();
@@ -193,12 +200,34 @@ public class GameManager : MonoBehaviour {
 		PlayerLevelPoints = newDic;
 
 	}
+
+	private static void ConvertPoints() {
+		Dictionary<string,int> newDic = new Dictionary<string,int> ();
+		
+		var items = from pair in PlayerPoints
+			orderby pair.Value descending
+				select pair;
+		
+		//int points = PlayerPoints.Count;
+		foreach (KeyValuePair<string, int> pair in items)
+		{
+			newDic.Add (pair.Key,pair.Value);
+		}
+		
+		PlayerPoints = newDic;
+	}
 	public static void StartNextLevel() {
 		_playingLevelList.Remove (_nextLevel);
 		DeadPlayerIdentificators = new List<string> ();
 		SetLevelPoints ();
 		Application.LoadLevel (_nextLevel);
 	}
+
+	private static void ShowEndGameScreen() {
+		GameObject go = GameObject.Instantiate (EndGameCanvas, new Vector3(0f,0f,0f),new Quaternion()) as GameObject;
+		
+	}
+	
 
 	}
 
