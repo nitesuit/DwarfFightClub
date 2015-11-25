@@ -142,6 +142,9 @@ public class PlayerMover : MonoBehaviour {
             audioSource.Play();
             Destroy(other.gameObject);
             StartCoroutine(SpeedBoost(speedBoost, buffTimeLimit));
+			if (Application.loadedLevelName=="Level4") {
+				GameManager.PlayerLevelPoints[controls.playerIdentifier]++;
+			}
         }
     }
 

@@ -9,6 +9,7 @@ public class LevelSelector : MonoBehaviour {
 	private int _selectedIndex = 0;
 	public Button forwardButton;
 	public Button backButton;
+	public GameObject Disabled;
 	public bool IsNextLevelWindow;
 	// Use this for initialization
 	void Start () {
@@ -19,8 +20,12 @@ public class LevelSelector : MonoBehaviour {
 	void Update () {
 	
 		if (IsNextLevelWindow) {
-		
-			ChangeLevel();
+			string _horizontalAxis = GameManager.PlayerLevelPoints.Keys.First () + "Horizontal";
+			ChangeLevel (_horizontalAxis);
+		} else {
+			if (Disabled.activeSelf) {
+				ChangeLevel ("P1_Horizontal");
+			}
 		}
 
 	}
@@ -56,9 +61,9 @@ public class LevelSelector : MonoBehaviour {
 		if (IsNextLevelWindow) GameManager.SetLevelPoints ();
 	}
 
-	private void ChangeLevel() {
+	private void ChangeLevel(string _horizontalAxis) {
 
-		string _horizontalAxis = GameManager.PlayerLevelPoints.Keys.First () + "Horizontal";
+
 
 		forwardButton.interactable = true;
 		backButton.interactable = true;
