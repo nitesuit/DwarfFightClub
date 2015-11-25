@@ -69,6 +69,7 @@ public class PlayerAttacker : MonoBehaviour
                 o.tag = "Hazard";
                 ammo--;
                 if (ammo == 0) weapon = null;
+                anim.SetTrigger("punch");
             }
             else if (Input.GetButton(controls.playerIdentifier + controls.punchButton) &&
                      (weapon == null || controls.canPunchWhileHolding))
@@ -76,6 +77,8 @@ public class PlayerAttacker : MonoBehaviour
                 nextFire = Time.time + fireRate;
 
                 Vector3 weaponSpawn = DetermineLaunchPoint().position;
+                anim.SetTrigger("punch");
+
                 GameObject o = Instantiate(punch, weaponSpawn, Quaternion.identity) as GameObject;
                 o.transform.parent = transform;
                 o.tag = "Punch";
