@@ -83,7 +83,10 @@ public class LifeController : MonoBehaviour {
         {
             if (!(other.tag == "Punch" && tag == other.transform.parent.tag)) {
                 lives--;//tag == "Player" && other.transform.parent.tag == "Player"))lives--;
-                Instantiate(bloodParticles, gameObject.transform.localPosition, Quaternion.identity);
+                if (gameObject.tag == "Player")
+                {
+                   Instantiate(bloodParticles, gameObject.transform.localPosition, Quaternion.identity);
+                }
             }
 
             immune = true;

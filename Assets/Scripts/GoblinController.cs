@@ -10,6 +10,7 @@ public class GoblinController : MonoBehaviour {
     public float fireRate;
     public float punchDuration;
     private bool targetLocked = false;
+    private Animator anim;
     public GameObject weapon;
     private Rigidbody2D rb;
     private LifeController lc;
@@ -17,10 +18,12 @@ public class GoblinController : MonoBehaviour {
 	void Awake () {
         rb = GetComponent<Rigidbody2D>();
         lc = GetComponent<LifeController>();
-	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
+        anim = GetComponent<Animator>();
+
+    }
+
+    // Update is called once per frame
+    void FixedUpdate () {
         if (lc.Immobile) return;
         var players = GameObject.FindGameObjectsWithTag("Player");
         Vector2 direction = new Vector2(0,-range);
@@ -58,6 +61,24 @@ public class GoblinController : MonoBehaviour {
                 Destroy(o, punchDuration);
             }
         }
+        anim.SetBool("walking", true);
 
+        if (direction.x <= 1 && direction.x >= 0 && direction.y >= 0 && direction.y <= 1)
+	    {
+            Debug.Log("lookin right");
+
+            anim.SetFloat("moveHorizontal", 1f);
+            anim.SetFloat("moveVertical", 0f);
+	        return;
+	    }
+
+        if (direction.x >= -1 && direction.x <= 0 && direction.y >= 0 && direction.y <= 1)
+        {
+            Debug.Log("lookin left");
+
+            anim.SetFloat("moveHorizontal", -1f);
+            anim.SetFloat("moveVertical", 0f);
+            return;
+        }
     }
 }
