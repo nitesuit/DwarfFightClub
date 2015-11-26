@@ -1985,6 +1985,7 @@ MonoBehaviour:
 
     Redshrike
 
+    Night Driver
 
 '
 --- !u!222 &586154215
@@ -3774,7 +3775,7 @@ MonoBehaviour:
   - {fileID: 21300344, guid: 9a8384657c8c1a04385f693fb5dda7cf, type: 3}
   - {fileID: 21300344, guid: e11f3548618ee784aa1b6e8f055b874c, type: 3}
   - {fileID: 21300344, guid: 94e0702e76f61854f80a23b8932c9d21, type: 3}
-  Axis: P4_
+  Axis: P5_
   playerImage: {fileID: 907430272}
   TimeBetweenClicks: .300000012
   forwardButton: {fileID: 2147067054}
@@ -6993,11 +6994,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Game goal: Collect more points than your oponents\n\nCONTROLS\nFirst Player
-    - Mouse and Keybaord\nOther Players - GamePad\n\nNavigation is controller with
-    arrows.\nFire button creates interaction.\n\nLEVEL GOALS\nLevel1 - Last survivor\nLevel2
-    - Last survivor/kill as many goblins\nLevel3 - Last survivor \nLevel4 - Last survivor/collect
-    as many pineapples"
+  m_Text: "Game goal: Collect more points than your oponents\n\nCONTROLS\nFirst&Second
+    Player - Mouse and Keybaord\nOther Players - GamePad\n\nNavigation is controlled
+    with arrows.\nFire button creates interaction.\n\nP1 Controls: WASD & CTRL\nP2
+    Controls: PL;' & \\ \n\nLEVEL GOALS\nLevel1 - Last survivor\nLevel2 - Last survivor/kill
+    as many goblins\nLevel3 - Last survivor \nLevel4 - Last survivor/collect as many
+    pineapples"
 --- !u!222 &1700780630
 CanvasRenderer:
   m_ObjectHideFlags: 0

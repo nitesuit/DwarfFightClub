@@ -15,11 +15,11 @@ Loading D:\Projects\Unity\DwarfFightClub\Game_Data\Managed\UnityEngine.UI.dll in
 Platform assembly: D:\Projects\Unity\DwarfFightClub\Game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading D:\Projects\Unity\DwarfFightClub\Game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: D:\Projects\Unity\DwarfFightClub\Game_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.094 seconds
+- Completed reload, in  0.133 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: D:\Projects\Unity\DwarfFightClub\Game_Data\Managed\System.dll (this message is harmless)
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: adc -> priority: 1 
+  Thread -> id: 25a0 -> priority: 1 
