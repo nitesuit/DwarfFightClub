@@ -13,8 +13,10 @@ public class LevelSelector : MonoBehaviour {
 	public bool IsNextLevelWindow;
 	public Button StartButton;
 	private int _counter=0;
-	// Use this for initialization
-	void Start () {
+    public float TimeBetweenClicks = 0.3f;
+    private float _timeStamp = 0;
+    // Use this for initialization
+    void Start () {
 		SetLevel ();
 	}
 	
@@ -73,18 +75,25 @@ public class LevelSelector : MonoBehaviour {
 
 		forwardButton.interactable = true;
 		backButton.interactable = true;
-		if (Input.GetButtonDown (_horizontalAxis)) {
-			
-			if (Input.GetAxisRaw(_horizontalAxis)==-1) {
-				_selectedIndex--;
-				backButton.interactable = false;
-			}
-			else {_selectedIndex++; 
-				forwardButton.interactable = false; // cheat to highlight button
-			}
-		}
-		
-		if (_selectedIndex > Levels.Length - 1 ) {
+        if (Time.time >= _timeStamp)
+        {
+
+            if (Input.GetAxisRaw(_horizontalAxis) == -1)
+            {
+                _selectedIndex--;
+                backButton.interactable = false;
+                _timeStamp = Time.time + TimeBetweenClicks;
+            }
+
+            else if (Input.GetAxisRaw(_horizontalAxis) == 1)
+            {
+                _selectedIndex++;
+                forwardButton.interactable = false; // cheat to highlight button
+                _timeStamp = Time.time + TimeBetweenClicks;
+            }
+        }
+
+        if (_selectedIndex > Levels.Length - 1 ) {
 			_selectedIndex = 0;
 		}
 		if (_selectedIndex <0) {

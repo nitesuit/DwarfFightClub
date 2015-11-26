@@ -1333,6 +1333,7 @@ MonoBehaviour:
   - {fileID: 21300344, guid: 94e0702e76f61854f80a23b8932c9d21, type: 3}
   Axis: P2_
   playerImage: {fileID: 73855911}
+  TimeBetweenClicks: .300000012
   forwardButton: {fileID: 191892374}
   backButton: {fileID: 657853123}
   Disable: {fileID: 975888029}
@@ -2194,6 +2195,7 @@ MonoBehaviour:
   - {fileID: 21300344, guid: 94e0702e76f61854f80a23b8932c9d21, type: 3}
   Axis: P3_
   playerImage: {fileID: 585050331}
+  TimeBetweenClicks: .300000012
   forwardButton: {fileID: 883660242}
   backButton: {fileID: 568405891}
   Disable: {fileID: 1812725473}
@@ -3774,6 +3776,7 @@ MonoBehaviour:
   - {fileID: 21300344, guid: 94e0702e76f61854f80a23b8932c9d21, type: 3}
   Axis: P4_
   playerImage: {fileID: 907430272}
+  TimeBetweenClicks: .300000012
   forwardButton: {fileID: 2147067054}
   backButton: {fileID: 1993979865}
   Disable: {fileID: 328438092}
@@ -3936,6 +3939,7 @@ MonoBehaviour:
   Disabled: {fileID: 1299376804}
   IsNextLevelWindow: 0
   StartButton: {fileID: 771425570}
+  TimeBetweenClicks: .300000012
 --- !u!114 &895890291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6148,6 +6152,7 @@ MonoBehaviour:
   - {fileID: 21300344, guid: 94e0702e76f61854f80a23b8932c9d21, type: 3}
   Axis: P1_
   playerImage: {fileID: 1057542897}
+  TimeBetweenClicks: .300000012
   forwardButton: {fileID: 1518901091}
   backButton: {fileID: 121982486}
   Disable: {fileID: 1377641582}

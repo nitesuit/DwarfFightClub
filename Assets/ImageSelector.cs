@@ -8,6 +8,8 @@ public class ImageSelector : MonoBehaviour {
 	public Sprite[] Players;
 	public string Axis;
 	public Image playerImage;
+    public float TimeBetweenClicks = 0.3f;
+    private float _timeStamp = 0;
 	private int _selectedIndex=0;
 	private int _maxIndex;
 	public Button forwardButton;
@@ -48,17 +50,19 @@ public class ImageSelector : MonoBehaviour {
 		backButton.interactable = true;
 
 
-		//if (Input.GetButtonDown (_horizontalAxis)) {
+		if (Time.time >= _timeStamp) {
 			
-			if (Input.GetAxisRaw(_horizontalAxis)==-1) {
+			if (Input.GetAxisRaw(_horizontalAxis)==-1 ) {
 				_selectedIndex--;
 				backButton.interactable = false;
-			}
+                _timeStamp = Time.time + TimeBetweenClicks;
+            }
 
 			else if (Input.GetAxisRaw(_horizontalAxis)==1 ){_selectedIndex++; 
 				forwardButton.interactable = false; // cheat to highlight button
-			}
-	//	}
+                _timeStamp = Time.time + TimeBetweenClicks;
+            }
+		}
 		
 		if (_selectedIndex > Players.Length - 1 ) {
 			_selectedIndex = 0;
