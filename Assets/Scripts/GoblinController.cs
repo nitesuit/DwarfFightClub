@@ -53,7 +53,7 @@ public class GoblinController : MonoBehaviour {
             if (Time.time > nextFire && targetLocked)
             {
                 nextFire = Time.time + fireRate;
-
+                anim.SetTrigger("punch");
                 Vector2 weaponSpawn =  (Vector2)transform.position + direction.normalized/2;
                 GameObject o = Instantiate(weapon, weaponSpawn, Quaternion.identity) as GameObject;
                 o.transform.parent = transform;
@@ -69,7 +69,11 @@ public class GoblinController : MonoBehaviour {
 
             anim.SetFloat("moveHorizontal", 1f);
             anim.SetFloat("moveVertical", 0f);
-	        return;
+
+            anim.SetFloat("idleHorizontal", 1f);
+            anim.SetFloat("idleVertical", 0f);
+
+            return;
 	    }
 
         if (direction.x <= 0 && direction.y >= 0 && direction.y <= 1)
@@ -78,6 +82,10 @@ public class GoblinController : MonoBehaviour {
 
             anim.SetFloat("moveHorizontal", -1f);
             anim.SetFloat("moveVertical", 0f);
+
+            anim.SetFloat("idleHorizontal", -1f);
+            anim.SetFloat("idleVertical", 0f);
+
             return;
         }
     }

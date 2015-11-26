@@ -86,7 +86,7 @@ public class LifeController : MonoBehaviour {
                 if (gameObject.tag == "Player")
                 {
                     var position = gameObject.transform.localPosition;
-                    position.z += 20;
+                    position.z = -4.5f;
                    Instantiate(bloodParticles, position, Quaternion.identity);
                 }
             }
