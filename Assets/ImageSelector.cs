@@ -46,16 +46,19 @@ public class ImageSelector : MonoBehaviour {
 
 		forwardButton.interactable = true;
 		backButton.interactable = true;
-		if (Input.GetButtonDown (_horizontalAxis)) {
+
+
+		//if (Input.GetButtonDown (_horizontalAxis)) {
 			
 			if (Input.GetAxisRaw(_horizontalAxis)==-1) {
 				_selectedIndex--;
 				backButton.interactable = false;
 			}
-			else {_selectedIndex++; 
+
+			else if (Input.GetAxisRaw(_horizontalAxis)==1 ){_selectedIndex++; 
 				forwardButton.interactable = false; // cheat to highlight button
 			}
-		}
+	//	}
 		
 		if (_selectedIndex > Players.Length - 1 ) {
 			_selectedIndex = 0;
