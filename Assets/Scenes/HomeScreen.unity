@@ -1272,10 +1272,10 @@ RectTransform:
   - {fileID: 382109163}
   m_Father: {fileID: 885192503}
   m_RootOrder: 1
-  m_AnchorMin: {x: .5, y: .5}
-  m_AnchorMax: {x: .5, y: .5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 4.57763672e-05}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: -122, y: -262}
   m_Pivot: {x: .5, y: .5}
 --- !u!1 &375434019
 GameObject:
@@ -4436,10 +4436,10 @@ RectTransform:
   - {fileID: 2132896662}
   m_Father: {fileID: 375434020}
   m_RootOrder: 1
-  m_AnchorMin: {x: .5, y: .5}
-  m_AnchorMax: {x: .5, y: .5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 4.57763672e-05}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: -122, y: -262}
   m_Pivot: {x: .5, y: .5}
 --- !u!1 &1008457797
 GameObject:
@@ -5485,10 +5485,10 @@ RectTransform:
   - {fileID: 231717901}
   m_Father: {fileID: 1541580022}
   m_RootOrder: 1
-  m_AnchorMin: {x: .5, y: .5}
-  m_AnchorMax: {x: .5, y: .5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 4.57763672e-05}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: -122, y: -262}
   m_Pivot: {x: .5, y: .5}
 --- !u!1 &1395877958
 GameObject:
@@ -7229,10 +7229,10 @@ RectTransform:
   - {fileID: 2147391661}
   m_Father: {fileID: 600837756}
   m_RootOrder: 1
-  m_AnchorMin: {x: .5, y: .5}
-  m_AnchorMax: {x: .5, y: .5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 4.57763672e-05}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: -122, y: -262}
   m_Pivot: {x: .5, y: .5}
 --- !u!1 &1814511934
 GameObject:
