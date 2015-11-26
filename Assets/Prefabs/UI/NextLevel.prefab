@@ -377,6 +377,7 @@ MonoBehaviour:
   Disabled: {fileID: 0}
   IsNextLevelWindow: 1
   StartButton: {fileID: 11457714}
+  TimeBetweenClicks: .300000012
 --- !u!114 &11438394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -460,7 +461,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1376, y: 768}
+  m_ReferenceResolution: {x: 1366, y: 768}
   m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
@@ -634,6 +635,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsEndGame: 0
   PlayerCard: {fileID: 130906, guid: 0df0bd67e5cb34bcaa4437f6ee28bc72, type: 2}
+  TotalPoints: {fileID: 0}
+  LevelPoints: {fileID: 0}
 --- !u!222 &22207646
 CanvasRenderer:
   m_ObjectHideFlags: 1
