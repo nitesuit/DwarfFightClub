@@ -7,6 +7,7 @@ public class LifeController : MonoBehaviour {
     public float throwbackPower = 3f;
     public AudioClip takeHitSound;
     public AudioClip dieSound;
+    public GameObject bloodParticles;
     private bool immune = false;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
@@ -80,7 +81,10 @@ public class LifeController : MonoBehaviour {
             && (other.transform.parent == null || other.transform.parent.name != transform.name))
             ))
         {
-            if (!(other.tag == "Punch" && tag == other.transform.parent.tag)) lives--;//tag == "Player" && other.transform.parent.tag == "Player"))lives--;
+            if (!(other.tag == "Punch" && tag == other.transform.parent.tag)) {
+                lives--;//tag == "Player" && other.transform.parent.tag == "Player"))lives--;
+                Instantiate(bloodParticles, gameObject.transform.localPosition, Quaternion.identity);
+            }
 
             immune = true;
             Immobile = true;

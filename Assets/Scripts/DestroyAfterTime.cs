@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DestroyAfterTime : MonoBehaviour {
-
+public class DestroyAfterTime : MonoBehaviour
+{
+    public float time;
 	// Use this for initialization
 	void Start () {
-        Destroy(this.gameObject, 2.0f);
+        Destroy(this.gameObject, time);
     }
 	
 	// Update is called once per frame

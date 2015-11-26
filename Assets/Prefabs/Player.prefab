@@ -431,6 +431,7 @@ MonoBehaviour:
   throwbackPower: 10
   takeHitSound: {fileID: 8300000, guid: 6a4331cf14665d14f92da10e73856c8f, type: 3}
   dieSound: {fileID: 8300000, guid: db5ba65c7d4f2544793f1338bd22bae2, type: 3}
+  bloodParticles: {fileID: 178778, guid: eb9ec52c5e22d614ca3e9ec2e8259814, type: 2}
 --- !u!114 &11428680
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -857,6 +858,10 @@ Prefab:
       propertyPath: ammo
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: bloodParticles
+      value: 
+      objectReference: {fileID: 178778, guid: eb9ec52c5e22d614ca3e9ec2e8259814, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 137242}
