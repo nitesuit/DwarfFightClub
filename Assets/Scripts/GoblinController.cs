@@ -63,18 +63,18 @@ public class GoblinController : MonoBehaviour {
         }
         anim.SetBool("walking", true);
 
-        if (direction.x <= 1 && direction.x >= 0 && direction.y >= 0 && direction.y <= 1)
+        if (direction.x >= 0 && direction.y >= -1 && direction.y <= 1)
 	    {
-            Debug.Log("lookin right");
+            //Debug.Log("lookin right");
 
             anim.SetFloat("moveHorizontal", 1f);
             anim.SetFloat("moveVertical", 0f);
 	        return;
 	    }
 
-        if (direction.x >= -1 && direction.x <= 0 && direction.y >= 0 && direction.y <= 1)
+        if (direction.x <= 0 && direction.y >= 0 && direction.y <= 1)
         {
-            Debug.Log("lookin left");
+            //Debug.Log("lookin left");
 
             anim.SetFloat("moveHorizontal", -1f);
             anim.SetFloat("moveVertical", 0f);
