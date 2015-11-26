@@ -49,6 +49,7 @@
      <Compile Include="Assets\GOGenerator.cs" />
      <Compile Include="Assets\GameManager.cs" />
      <Compile Include="Assets\ImageSelector.cs" />
+     <Compile Include="Assets\LevelPauser.cs" />
      <Compile Include="Assets\LevelSelector.cs" />
      <Compile Include="Assets\PlayerCardShower.cs" />
      <Compile Include="Assets\PlayerSpawner.cs" />
